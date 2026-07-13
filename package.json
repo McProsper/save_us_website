@@ -1,0 +1,27 @@
+{
+  "name": "save-us",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site web de l'ONG Save Us",
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "build:site": "node scripts/build-site.mjs",
+    "build": "npm run setup && npm run build:site",
+    "postinstall": "node scripts/setup.mjs",
+    "dev": "npm run build && npx --yes serve dist -l 3000",
+    "preview": "npx --yes serve dist -l 3000"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "flatpickr": "^4.6.13",
+    "fslightbox": "^3.4.2",
+    "mixitup": "^3.3.2",
+    "slim-select": "^2.9.2",
+    "split-type": "^0.3.4",
+    "swiper": "^11.2.1",
+    "wow.js": "^1.2.2"
+  }
+}
