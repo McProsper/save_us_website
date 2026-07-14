@@ -102,6 +102,8 @@ async function downloadRemoteAssets() {
     'assets/img/events-vector-1.png',
     'assets/img/events-vector-2.svg',
     'assets/img/why-join.jpg',
+    'assets/img/mission.jpg',
+    'assets/img/contact-img.jpg',
     'assets/img/member-1.jpg',
     'assets/img/member-2.jpg',
     'assets/img/member-3.jpg',

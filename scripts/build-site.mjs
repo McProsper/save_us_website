@@ -7,10 +7,10 @@ const ROOT = join(__dirname, '..');
 const DIST = join(ROOT, 'dist');
 
 const logo = (variant = 'default') => {
-  if (variant === 'white') {
-    return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/save-us-logo.png" alt="Save Us" class="save-us-logo"></a>`;
-  }
-  return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/save-us-logo.png" alt="Save Us" class="save-us-logo" onerror="this.onerror=null;this.src='assets/img/save-us-logo.svg'"></a>`;
+    if (variant === 'white') {
+        return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/save-us-logo.png" alt="Save Us" class="save-us-logo"></a>`;
+    }
+    return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/save-us-logo.png" alt="Save Us" class="save-us-logo" onerror="this.onerror=null;this.src='assets/img/save-us-logo.svg'"></a>`;
 };
 
 const head = (title) => `<!DOCTYPE html>
@@ -108,7 +108,7 @@ const ctaBand = `
             <div class="save-us-cta-band wow animate__fadeInUp">
                 <span class="save-us-cta-band__label">Agissez maintenant</span>
                 <h2>Ensemble, offrons un avenir aux enfants et aux femmes des zones de guerre</h2>
-                <p>Votre don ou votre engagement bénévole change concrètement des vies. Rejoignez les 12 personnes qui nous font confiance.</p>
+                <p>Votre don ou votre engagement bénévole change concrètement des vies. Rejoignez les 10+ donateurs qui nous font confiance.</p>
                 <div class="save-us-cta-band__btns">
                     <a href="faire-un-don.html" class="ul-btn ul-btn--white"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Faire un don</a>
                     <a href="devenir-benevole.html" class="ul-btn ul-btn--outline-white"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Devenir bénévole</a>
@@ -131,7 +131,7 @@ const valuesSection = `
                     <div class="save-us-value-card">
                         <div class="save-us-value-card__icon save-us-value-card__icon--green"><i class="flaticon-love"></i></div>
                         <h3>Protection</h3>
-                        <p>Extraire et mettre en sécurité les enfants et les femmes exposés aux violences et aux conflits armés.</p>
+                        <p>Mettre en sécurité les enfants et les femmes exposés aux violences et aux conflits armés.</p>
                     </div>
                 </div>
                 <div class="col wow animate__fadeInUp" data-wow-delay="0.1s">
@@ -208,17 +208,17 @@ const footer = `
                         <h3 class="ul-footer-widget-title">Dernières actualités</h3>
                         <div class="ul-blog-sidebar-posts">
                             <div class="ul-blog-sidebar-post ul-footer-post">
-                                <div class="img"><img src="assets/img/blog-2.jpg" alt=""></div>
+                                <div class="img"><img src="assets/img/blog-b-1.jpg" alt=""></div>
                                 <div class="txt">
                                     <span class="date"><span class="icon"><i class="flaticon-calendar"></i></span><span>15 Mars 2025</span></span>
                                     <h4 class="title"><a href="actualite-details.html?id=campagne2025">Campagne Enfants d'abord 2025</a></h4>
                                 </div>
                             </div>
                             <div class="ul-blog-sidebar-post ul-footer-post">
-                                <div class="img"><img src="assets/img/blog-1.jpg" alt=""></div>
+                                <div class="img"><img src="assets/img/why-join.jpg" alt=""></div>
                                 <div class="txt">
-                                    <span class="date"><span class="icon"><i class="flaticon-calendar"></i></span><span>28 Fév. 2025</span></span>
-                                    <h4 class="title"><a href="actualite-details.html?id=partenariat">Partenariat UNICEF</a></h4>
+                                    <span class="date"><span class="icon"><i class="flaticon-calendar"></i></span><span>15 Déc. 2024</span></span>
+                                    <h4 class="title"><a href="actualite-details.html?id=bilan">Bilan 2024 : 50 vies impactées</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -290,8 +290,10 @@ const indexContent = `
                             <div class="wow animate__fadeInUp">
                                 <span class="save-us-hero-badge">Association humanitaire active</span>
                                 <span class="ul-banner-sub-title ul-section-sub-title">Ensemble, sauvons des vies</span>
-                                <h1 class="ul-banner-title">Protéger les enfants et les femmes des zones de guerre</h1>
-                                <p class="ul-banner-descr">Save Us évacue, héberge et accompagne les populations les plus vulnérables touchées par les conflits armés. Chaque geste compte.</p>
+                                 <h3 class="ul-banner-title">Soutenir l'éducation dans les zones de guerre n'est pas un
+                                    simple geste de bonté, c'est semer l'avenir pour tous.</h3>
+                                <p class="ul-banner-descr">Ensemble, nous faisons la différence pour ceux qui en ont
+                                    besoin.</p>
                                 <div class="ul-banner-btns">
                                     <a href="faire-un-don.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Faire un don</a>
                                     <a href="devenir-benevole.html" class="ul-btn ul-btn--secondary"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Devenir bénévole</a>
@@ -317,7 +319,7 @@ const indexContent = `
                             </div>
                             <div class="save-us-hero-float">
                                 <span class="save-us-hero-float__number">10+</span>
-                                <span class="save-us-hero-float__label">Vies sauvées depuis 2018</span>
+                                <span class="save-us-hero-float__label">Vies sauvées depuis 2020</span>
                             </div>
                         </div>
                     </div>
@@ -341,7 +343,21 @@ const indexContent = `
                         <div class="ul-about-txt">
                             <span class="ul-section-sub-title ul-section-sub-title--2">Qui sommes-nous</span>
                             <h2 class="ul-section-title">Une voix pour ceux que la guerre a réduits au silence</h2>
-                            <p class="ul-section-descr">Fondée en 2018, Save Us intervient sur les fronts humanitaires pour extraire, protéger et reconstruire la vie des enfants et des femmes piégés dans les conflits. Notre réseau de bénévoles et de partenaires s'étend à travers l'Europe et les zones de crise.</p>
+                            <p class="ul-section-descr">Save Us est une association dédiée à l'éducation dans les zones
+                                de guerre.
+
+                                Créée en 2024 par Maéva Balla, notre objectif est de fournir un soutien éducatif et
+                                humanitaire aux enfants défavorisés.
+
+                                Nous croyons fermement que chaque enfant mérite une éducation et un avenir meilleur.</p>
+
+                            <p>Notre équipe est composée de bénévoles passionnés qui travaillent sans relâche pour
+                                apporter de l'espoir et des opportunités aux enfants les plus vulnérables.
+
+                                Nous collaborons avec des partenaires locaux et internationaux pour maximiser notre
+                                impact et assurer la durabilité de nos actions.
+
+                            </p>
                             <div class="ul-about-block">
                                 <div class="block-left">
                                     <div class="block-heading">
@@ -349,22 +365,15 @@ const indexContent = `
                                         <h3 class="block-title">Notre engagement</h3>
                                     </div>
                                     <ul class="block-list">
-                                        <li>Évacuation d'urgence 24h/24</li>
+                                        <li>Formations</li>
                                         <li>Hébergement et soins médicaux</li>
                                         <li>Éducation et réinsertion</li>
                                     </ul>
                                 </div>
-                                <div class="block-right"><img src="assets/img/about-block-img.jpg" alt=""></div>
                             </div>
                             <div class="ul-about-bottom">
-                                <a href="a-propos.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> En savoir plus</a>
-                                <div class="ul-about-call">
-                                    <div class="icon"><i class="flaticon-telephone-call"></i></div>
-                                    <div class="txt">
-                                        <span class="call-title">Contact</span>
-                                        <a href="tel:+33142000000">+237 6 99 90 99 90</a>
-                                    </div>
-                                </div>
+                                <a href="a-propos.html" class="ul-btn"><i
+                                        class="flaticon-fast-forward-double-right-arrows-symbol"></i> En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -397,83 +406,124 @@ const indexContent = `
                     </div>
                 </div>
                 <div class="row row-cols-md-3 row-cols-1 ul-bs-row gy-4 wow animate__fadeInUp">
-                    <div class="col">
+                     <div class="col">
                         <div class="save-us-activite-card">
-                            <div class="card-img"><img src="assets/img/donation-1.jpg" alt="Évacuation"></div>
-                            <div class="card-body">
-                                <span class="card-tag">Sécurité</span>
-                                <h3 class="card-title"><a href="activite-details.html?id=evacuation">Évacuation d'urgence</a></h3>
-                                <p class="card-excerpt">Extraction sécurisée des enfants et femmes menacés dans les zones de combat.</p>
-                                <a href="activite-details.html?id=evacuation" class="card-link">Voir les détails <i class="flaticon-next"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="save-us-activite-card">
-                            <div class="card-img"><img src="assets/img/donation-2.jpg" alt="Hébergement"></div>
-                            <div class="card-body">
-                                <span class="card-tag">Logement</span>
-                                <h3 class="card-title"><a href="activite-details.html?id=hebergement">Hébergement temporaire</a></h3>
-                                <p class="card-excerpt">Centres d'accueil sécurisés pour les familles déplacées par les conflits.</p>
-                                <a href="activite-details.html?id=hebergement" class="card-link">Voir les détails <i class="flaticon-next"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="save-us-activite-card">
-                            <div class="card-img"><img src="assets/img/donation-3.jpg" alt="Éducation"></div>
+                            <div class="card-img"><img src="assets/img/donation-3.jpg" alt="École mobile"></div>
                             <div class="card-body">
                                 <span class="card-tag">Éducation</span>
-                                <h3 class="card-title"><a href="activite-details.html?id=education">École mobile</a></h3>
-                                <p class="card-excerpt">Continuité scolaire pour les enfants privés d'école à cause de la guerre.</p>
-                                <a href="activite-details.html?id=education" class="card-link">Voir les détails <i class="flaticon-next"></i></a>
+                                <h3 class="card-title"><a href="activite-details.html?id=education">École mobile</a>
+                                </h3>
+                                <p class="card-excerpt">Continuité scolaire pour les enfants privés d'école à cause de
+                                    la guerre.</p>
+                                <a href="activite-details.html?id=education" class="card-link">Découvrir l'activité <i
+                                        class="flaticon-next"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col">
+                        <div class="save-us-activite-card">
+                            <div class="card-img"><img src="assets/img/blog-1.jpg" alt="Soutien psychologique"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Bien-être</span>
+                                <h3 class="card-title"><a href="activite-details.html?id=psychologie">Soutien
+                                        psychologique</a></h3>
+                                <p class="card-excerpt">Thérapie et groupes de parole pour surmonter les traumatismes de
+                                    guerre.</p>
+                                <a href="activite-details.html?id=psychologie" class="card-link">Découvrir l'activité <i
+                                        class="flaticon-next"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col">
+                        <div class="save-us-activite-card wow animate__fadeInUp">
+                            <div class="card-img"><img src="assets/img/blog-2.jpg" alt="Réinsertion & autonomie"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Emploi</span>
+                                <h3 class="card-title"><a href="activite-details.html?id=reinsertion">Réinsertion &
+                                        autonomie</a></h3>
+                                <p class="card-excerpt">Formation professionnelle et aide à l'emploi pour les femmes
+                                    réfugiées.</p>
+                                <a href="activite-details.html?id=reinsertion" class="card-link">Découvrir l'activité <i
+                                        class="flaticon-next"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-5">
-                    <a href="activites.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Toutes nos activités</a>
+                    <a href="activites.html" class="ul-btn"><i
+                            class="flaticon-fast-forward-double-right-arrows-symbol"></i> Toutes nos activités</a>
                 </div>
             </div>
         </section>
 
-        <section class="ul-blogs ul-section-spacing save-us-section-alt">
+       <section class="ul-blogs ul-section-spacing save-us-section-alt">
             <div class="ul-container wow animate__fadeInUp">
                 <div class="ul-section-heading justify-content-between">
                     <div>
                         <span class="ul-section-sub-title">Restez informés</span>
                         <h2 class="ul-section-title">Dernières actualités</h2>
                     </div>
-                    <a href="actualites.html" class="ul-btn d-none d-md-inline-flex"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Toutes les actualités</a>
+                    <a href="actualites.html" class="ul-btn d-none d-md-inline-flex"><i
+                            class="flaticon-fast-forward-double-right-arrows-symbol"></i> Toutes les actualités</a>
                 </div>
                 <div class="row row-cols-md-3 row-cols-1 ul-bs-row gy-4">
                     <div class="col">
                         <div class="ul-blog ul-blog-2">
-                            <div class="ul-blog-img"><img src="assets/img/blog-b-1.jpg" alt=""><div class="date"><span class="number">15</span><span class="txt">Mar</span></div></div>
+                            <div class="ul-blog-img"><img src="assets/img/blog-b-1.jpg" alt="">
+                                <div class="date"><span class="number">15</span><span class="txt">Mar</span></div>
+                            </div>
                             <div class="ul-blog-txt">
-                                <div class="ul-blog-infos"><div class="ul-blog-info"><span class="icon"><i class="flaticon-price-tag"></i></span><span class="text">Campagne</span></div></div>
-                                <a href="actualite-details.html?id=campagne2025" class="ul-blog-title">Lancement de la campagne « Enfants d'abord » 2025</a>
-                                <a href="actualite-details.html?id=campagne2025" class="ul-blog-btn">Lire la suite <span class="icon"><i class="flaticon-next"></i></span></a>
+                                <div class="ul-blog-infos">
+                                    <div class="ul-blog-info"><span class="icon"><i
+                                                class="flaticon-price-tag"></i></span><span class="text">Campagne</span>
+                                    </div>
+                                </div>
+                                <a href="actualite-details.html?id=campagne2025" class="ul-blog-title">Lancement de la
+                                    campagne « Enfants d'abord » 2025</a>
+                                <a href="actualite-details.html?id=campagne2025" class="ul-blog-btn">Lire la suite <span
+                                        class="icon"><i class="flaticon-next"></i></span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                     <div class="col">
                         <div class="ul-blog ul-blog-2">
-                            <div class="ul-blog-img"><img src="assets/img/blog-2.jpg" alt=""><div class="date"><span class="number">28</span><span class="txt">Fév</span></div></div>
+                            <div class="ul-blog-img"><img src="assets/img/event-img.jpg" alt="">
+                                <div class="date"><span class="number">5</span><span class="txt">Jan</span></div>
+                            </div>
                             <div class="ul-blog-txt">
-                                <div class="ul-blog-infos"><div class="ul-blog-info"><span class="icon"><i class="flaticon-price-tag"></i></span><span class="text">Partenariat</span></div></div>
-                                <a href="actualite-details.html?id=partenariat" class="ul-blog-title">Nouveau partenariat avec l'UNICEF</a>
-                                <a href="actualite-details.html?id=partenariat" class="ul-blog-btn">Lire la suite <span class="icon"><i class="flaticon-next"></i></span></a>
+                                <div class="ul-blog-infos">
+                                    <div class="ul-blog-info"><span class="icon"><i
+                                                class="flaticon-account"></i></span><span class="text">Save Us</span>
+                                    </div>
+                                    <div class="ul-blog-info"><span class="icon"><i
+                                                class="flaticon-price-tag"></i></span><span
+                                            class="text">Bénévolat</span></div>
+                                </div>
+                                <a href="actualite-details.html?id=benevoles" class="ul-blog-title">Recrutement de 50
+                                    nouveaux bénévoles</a>
+                                <a href="actualite-details.html?id=benevoles" class="ul-blog-btn">Lire la suite <span
+                                        class="icon"><i class="flaticon-next"></i></span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                       <div class="col">
                         <div class="ul-blog ul-blog-2">
-                            <div class="ul-blog-img"><img src="assets/img/blog-3.jpg" alt=""><div class="date"><span class="number">10</span><span class="txt">Fév</span></div></div>
+                            <div class="ul-blog-img"><img src="assets/img/why-join.jpg" alt="">
+                                <div class="date"><span class="number">15</span><span class="txt">Déc</span></div>
+                            </div>
                             <div class="ul-blog-txt">
-                                <div class="ul-blog-infos"><div class="ul-blog-info"><span class="icon"><i class="flaticon-price-tag"></i></span><span class="text">Témoignage</span></div></div>
-                                <a href="actualite-details.html?id=temoignage" class="ul-blog-title">Le parcours de Nadia et ses trois enfants</a>
-                                <a href="actualite-details.html?id=temoignage" class="ul-blog-btn">Lire la suite <span class="icon"><i class="flaticon-next"></i></span></a>
+                                <div class="ul-blog-infos">
+                                    <div class="ul-blog-info"><span class="icon"><i
+                                                class="flaticon-account"></i></span><span class="text">Save Us</span>
+                                    </div>
+                                    <div class="ul-blog-info"><span class="icon"><i
+                                                class="flaticon-price-tag"></i></span><span class="text">Bilan</span>
+                                    </div>
+                                </div>
+                                <a href="actualite-details.html?id=bilan" class="ul-blog-title">Bilan 2024 : 50 vies
+                                    impactées</a>
+                                <a href="actualite-details.html?id=bilan" class="ul-blog-btn">Lire la suite <span
+                                        class="icon"><i class="flaticon-next"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -512,14 +562,14 @@ const indexContent = `
                             <div class="ul-donate-form-section-txt">
                                 <span class="ul-section-sub-title text-white">Agir maintenant</span>
                                 <h2 class="ul-section-title text-white">Chaque cfa sauve une vie</h2>
-                                <p class="text-white mb-4">50 € financent un kit de survie. 100 € couvrent les soins médicaux d'urgence. 250 € permettent l'évacuation d'une famille.</p>
+                                <p class="text-white mb-4">50 000 FCFA financent un kit de survie. 100 000 FCFA couvrent les soins médicaux d'urgence. 250 000 FCFA permettent l'évacuation d'une famille.</p>
                                 <div class="ul-donation-progress">
                                     <div class="donation-progress-container ul-progress-container">
                                         <div class="donation-progressbar ul-progressbar" data-ul-progress-value="72"><div class="donation-progress-label ul-progress-label"></div></div>
                                     </div>
                                     <div class="ul-donation-progress-labels">
-                                        <span class="ul-donation-progress-label">Collecté : 1 440 000 €</span>
-                                        <span class="ul-donation-progress-label">Objectif : 2 000 000 €</span>
+                                        <span class="ul-donation-progress-label">Collecté : 1 440 000 FCFA</span>
+                                        <span class="ul-donation-progress-label">Objectif : 2 000 000 FCFA</span>
                                     </div>
                                 </div>
                             </div>
@@ -545,12 +595,9 @@ const indexPage = `${head('Accueil')}
 
 // --- ACTUALITES ---
 const actualitesCards = [
-  ['campagne2025', 'blog-b-1.jpg', '15', 'Mar', 'Campagne', "Lancement de la campagne « Enfants d'abord » 2025"],
-  ['partenariat', 'blog-2.jpg', '28', 'Fév', 'Partenariat', "Nouveau partenariat avec l'UNICEF"],
-  ['temoignage', 'blog-3.jpg', '10', 'Fév', 'Témoignage', 'Le parcours de Nadia et ses trois enfants'],
-  ['benevoles', 'event-img.jpg', '5', 'Jan', 'Bénévolat', 'Recrutement de 50 nouveaux bénévoles en France'],
-  ['urgence', 'blog-1.jpg', '20', 'Déc', 'Urgence', "Appel d'urgence : situation critique dans l'Est"],
-  ['bilan', 'why-join.jpg', '15', 'Déc', 'Bilan', 'Bilan 2024 : 50 vies impactées'],
+    ['campagne2025', 'blog-b-1.jpg', '15', 'Mar', 'Campagne', "Lancement de la campagne « Enfants d'abord » 2025"],
+    ['benevoles', 'event-img.jpg', '5', 'Jan', 'Bénévolat', 'Recrutement de 50 nouveaux bénévoles'],
+    ['bilan', 'why-join.jpg', '15', 'Déc', 'Bilan', 'Bilan 2024 : 50 vies impactées'],
 ].map(([id, img, day, month, cat, title]) => `
     <div class="col">
         <div class="ul-blog ul-blog-2">
@@ -597,8 +644,8 @@ const aProposPage = pageShell('À Propos', 'apropos', `
                     <div class="ul-about-txt">
                         <span class="ul-section-sub-title ul-section-sub-title--2">Save Us</span>
                         <h2 class="ul-section-title">Une association au service des plus vulnérables</h2>
-                        <p class="ul-section-descr">Save Us est née de l'urgence humanitaire. Face à l'ampleur des conflits et à la détresse des civils — en particulier des femmes et des enfants —, un groupe de citoyens engagés a décidé d'agir concrètement sur le terrain et en métropole.</p>
-                        <p class="ul-section-descr">Aujourd'hui, nous sommes une équipe de 340 bénévoles et une dizaine de salariés, soutenus par 12 donateurs. Nous intervenons dans 2 pays et avons sauvé plus de 50 vies depuis notre création.</p>
+                        <p class="ul-section-descr">Save Us est une association dédiée à l'éducation dans les zones de guerre. Créée en 2024 par Maéva Balla, notre objectif est de fournir un soutien éducatif et humanitaire aux enfants défavorisés. Nous croyons fermement que chaque enfant mérite une éducation et un avenir meilleur.</p>
+                        <p class="ul-section-descr">Notre équipe est composée de bénévoles passionnés qui travaillent sans relâche pour apporter de l'espoir et des opportunités aux enfants les plus vulnérables. Nous collaborons avec des partenaires locaux et internationaux pour maximiser notre impact et assurer la durabilité de nos actions.</p>
                     </div>
                 </div>
             </div>
@@ -628,10 +675,10 @@ const aProposPage = pageShell('À Propos', 'apropos', `
             <div class="tab-group">
                 <div class="ul-about-tabs-wrapper">
                     <div id="tab-mission" class="ul-tab ul-about-tab active">
-                        <div class="ul-about-tab-img"><img src="assets/img/mission-img.jpg" alt="Notre Mission"></div>
+                        <div class="ul-about-tab-img"><img src="assets/img/mission.jpg" alt="Notre Mission"></div>
                         <div class="ul-about-tab-txt">
                             <h3 class="ul-about-tab-title">Notre Mission</h3>
-                            <p class="ul-about-tab-descr">Sauver et protéger les enfants et les femmes victimes des conflits armés en leur offrant une évacuation sécurisée, un hébergement digne, des soins médicaux et un accompagnement vers l'autonomie.</p>
+                            <p class="ul-about-tab-descr">Sauver et protéger les enfants et les femmes victimes des conflits armés en leur offrant une formation et une réinsertion sécurisées, un hébergement digne, des soins médicaux et un accompagnement vers l'autonomie.</p>
                             <ul class="ul-about-tab-list">
                                 <li>Extraire les populations civiles des zones de combat actives</li>
                                 <li>Assurer les besoins vitaux : abri, nourriture, eau, soins</li>
@@ -646,10 +693,11 @@ const aProposPage = pageShell('À Propos', 'apropos', `
                             <h3 class="ul-about-tab-title">Notre Vision</h3>
                             <p class="ul-about-tab-descr">Un monde où aucun enfant ni aucune femme ne sera laissé sans protection face à la guerre. Nous aspirons à bâtir un réseau humanitaire mondial capable de réagir en moins de 24 heures à toute crise touchant les civils.</p>
                             <ul class="ul-about-tab-list">
-                                <li>Zéro enfant soldat, zéro femme abandonnée en zone de conflit</li>
-                                <li>Des corridors humanitaires reconnus par la communauté internationale</li>
-                                <li>Une société civile mobilisée et informée</li>
-                                <li>La paix durable par l'éducation et l'autonomisation des femmes</li>
+                                <li>Construire un monde où chaque enfant, même dans les zones de conflit, peut apprendre et grandir en toute sécurité.</li>
+                                <li>Nous travaillons en partenariat avec les acteurs locaux et internationaux pour maximiser notre impact.</li>
+                                <li>Notre vision inclut la création d'écoles sûres, l'accès à une éducation de qualité, et le développement de compétences pour un avenir meilleur.</li>
+                                <li>Nous aspirons à un monde où l'éducation n'est plus un privilège mais un droit fondamental accessible à tous.</li>
+                                <li>À travers nos actions, nous voulons inspirer le changement et créer une vague positive qui touchera les générations futures.</li>
                             </ul>
                         </div>
                     </div>
@@ -659,10 +707,11 @@ const aProposPage = pageShell('À Propos', 'apropos', `
                             <h3 class="ul-about-tab-title">Notre Objectif</h3>
                             <p class="ul-about-tab-descr">D'ici 2027, Save Us vise à doubler sa capacité d'intervention pour porter assistance à 10 000 personnes par an, tout en renforçant nos programmes de réinsertion et d'éducation.</p>
                             <ul class="ul-about-tab-list">
-                                <li><strong>2025 :</strong> Évacuer 2 000 personnes supplémentaires</li>
-                                <li><strong>2025 :</strong> Ouvrir 3 nouveaux centres d'hébergement en Europe</li>
-                                <li><strong>2026 :</strong> Scolariser 5 000 enfants déplacés</li>
-                                <li><strong>2027 :</strong> Former et employer 1 000 femmes réfugiées</li>
+                                <li>Garantir l'accès à l'éducation pour tous les enfants, sans distinction de race, de religion ou de situation géographique.</li>
+                                <li>Soutenir le développement personnel et l'épanouissement des enfants à travers des programmes éducatifs adaptés.</li>
+                                <li>Créer des programmes durables pour les communautés, en formant des enseignants locaux et en construisant des infrastructures éducatives résilientes.</li>
+                                <li>Fournir du matériel scolaire et des ressources pédagogiques aux écoles dans les zones de conflit.</li>
+                                <li>Sensibiliser la communauté internationale sur l'importance de l'éducation en situation de crise.</li>
                             </ul>
                             <p class="ul-about-tab-descr mt-3">Ces objectifs ne sont atteignables qu'avec votre soutien. <a href="faire-un-don.html" style="color:var(--ul-primary)">Faites un don</a> ou <a href="devenir-benevole.html" style="color:var(--ul-primary)">devenez bénévole</a>.</p>
                         </div>
@@ -688,7 +737,7 @@ const faireUnDonPage = pageShell('Faire un don', 'don', `
                 <div>
                     <span class="ul-section-sub-title">Votre générosité compte</span>
                     <h2 class="ul-section-title">Faire un don à Save Us</h2>
-                    <p class="ul-section-descr mt-3">100 % de votre don est affecté à nos programmes sur le terrain. Reçu fiscal disponible pour les résidents français.</p>
+                    <p class="ul-section-descr mt-3">100 % de votre don est affecté à nos programmes sur le terrain.</p>
                 </div>
             </div>
             <div class="row gy-5 align-items-start">
@@ -700,7 +749,7 @@ const faireUnDonPage = pageShell('Faire un don', 'don', `
                                 <div class="col-md-6"><div class="form-group"><label for="don-prenom">Prénom *</label><input type="text" id="don-prenom" name="prenom" required placeholder="Votre prénom"></div></div>
                                 <div class="col-md-6"><div class="form-group"><label for="don-nom">Nom *</label><input type="text" id="don-nom" name="nom" required placeholder="Votre nom"></div></div>
                                 <div class="col-md-6"><div class="form-group"><label for="don-email">Email *</label><input type="email" id="don-email" name="email" required placeholder="votre@email.com"></div></div>
-                                <div class="col-md-6"><div class="form-group"><label for="don-tel">Téléphone</label><input type="tel" id="don-tel" name="telephone" placeholder="+33 6 00 00 00 00"></div></div>
+                                <div class="col-md-6"><div class="form-group"><label for="don-tel">Téléphone</label><input type="tel" id="don-tel" name="telephone" placeholder="+237 6 99 90 99 90"></div></div>
                                 <div class="col-12"><div class="form-group"><label>Montant du don *</label>
                                     <div class="ul-donate-form mt-2" style="display:flex;flex-wrap:wrap;gap:10px">
                                         <div><input type="radio" name="donate-amount" id="d-25" value="25" checked hidden><label for="d-25" class="ul-donate-form-label">25 000 FCFA</label></div>
@@ -713,10 +762,9 @@ const faireUnDonPage = pageShell('Faire un don', 'don', `
                                 <div class="col-12"><div class="form-group"><label for="don-projet">Affecter mon don à</label>
                                     <select id="don-projet" name="projet">
                                         <option value="general">Fonds général (là où le besoin est le plus urgent)</option>
-                                        <option value="evacuation">Évacuation d'urgence</option>
-                                        <option value="hebergement">Hébergement temporaire</option>
                                         <option value="education">École mobile</option>
-                                        <option value="sante">Soins médicaux</option>
+                                        <option value="psychologie">Soutien psychologique</option>
+                                        <option value="reinsertion">Réinsertion & autonomie</option>
                                     </select>
                                 </div></div>
                                 <div class="col-12"><div class="form-group"><label for="don-message">Message (optionnel)</label><textarea id="don-message" name="message" rows="3" placeholder="Un mot pour nos équipes..."></textarea></div></div>
@@ -766,7 +814,7 @@ const devenirBenevolePage = pageShell('Devenir bénévole', 'benevole', `
                     <div class="ul-why-join-txt">
                         <span class="ul-section-sub-title">Rejoignez-nous</span>
                         <h2 class="ul-section-title">Pourquoi devenir bénévole ?</h2>
-                        <p class="ul-section-descr">Nos bénévoles sont le cœur battant de Save Us. Sur le terrain ou depuis la France, ils accueillent, traduisent, organisent et soutiennent les familles en reconstruction.</p>
+                        <p class="ul-section-descr">Nos bénévoles sont le cœur battant de Save Us. Sur le terrain ou depuis où ils sont, ils accueillent, traduisent, organisent et soutiennent les familles en reconstruction.</p>
                         <div class="ul-accordion">
                             <div class="ul-single-accordion-item open">
                                 <div class="ul-single-accordion-item__header"><div class="left"><h3 class="ul-single-accordion-item__title">Un impact direct et mesurable</h3></div><span class="icon"><i class="flaticon-next"></i></span></div>
@@ -834,12 +882,9 @@ const devenirBenevolePage = pageShell('Devenir bénévole', 'benevole', `
 
 // --- ACTIVITES ---
 const activitesList = [
-  ['evacuation', 'donation-1.jpg', 'Sécurité', 'Évacuation d\'urgence', 'Extraction sécurisée des enfants et femmes menacés dans les zones de combat.'],
-  ['hebergement', 'donation-2.jpg', 'Logement', 'Hébergement temporaire', 'Centres d\'accueil sécurisés pour les familles déplacées par les conflits.'],
-  ['education', 'donation-3.jpg', 'Éducation', 'École mobile', 'Continuité scolaire pour les enfants privés d\'école à cause de la guerre.'],
-  ['sante', 'donation-4.jpg', 'Santé', 'Soins médicaux d\'urgence', 'Accès aux soins pour les blessés et aux soins maternels en zone de crise.'],
-  ['psychologie', 'blog-1.jpg', 'Bien-être', 'Soutien psychologique', 'Thérapie et groupes de parole pour surmonter les traumatismes de guerre.'],
-  ['reinsertion', 'blog-2.jpg', 'Emploi', 'Réinsertion & autonomie', 'Formation professionnelle et aide à l\'emploi pour les femmes réfugiées.'],
+    ['education', 'donation-3.jpg', 'Éducation', 'École mobile', 'Continuité scolaire pour les enfants privés d\'école à cause de la guerre.'],
+    ['psychologie', 'blog-1.jpg', 'Bien-être', 'Soutien psychologique', 'Thérapie et groupes de parole pour surmonter les traumatismes de guerre.'],
+    ['reinsertion', 'blog-2.jpg', 'Emploi', 'Réinsertion & autonomie', 'Formation professionnelle et aide à l\'emploi pour les femmes réfugiées.'],
 ].map(([id, img, tag, title, excerpt]) => `
     <div class="col">
         <div class="save-us-activite-card wow animate__fadeInUp">
@@ -883,14 +928,14 @@ const actualiteDetailsPage = pageShell('Détail actualité', 'actualites', `
     ${ctaBand}`, '', '<script src="assets/js/save-us-data.js"></script>');
 
 const pages = {
-  'index.html': indexPage,
-  'actualites.html': actualitesPage,
-  'a-propos.html': aProposPage,
-  'faire-un-don.html': faireUnDonPage,
-  'devenir-benevole.html': devenirBenevolePage,
-  'activites.html': activitesPage,
-  'activite-details.html': activiteDetailsPage,
-  'actualite-details.html': actualiteDetailsPage,
+    'index.html': indexPage,
+    'actualites.html': actualitesPage,
+    'a-propos.html': aProposPage,
+    'faire-un-don.html': faireUnDonPage,
+    'devenir-benevole.html': devenirBenevolePage,
+    'activites.html': activitesPage,
+    'activite-details.html': activiteDetailsPage,
+    'actualite-details.html': actualiteDetailsPage,
 };
 
 await rm(DIST, { recursive: true, force: true });
@@ -899,8 +944,8 @@ await cp(join(ROOT, 'assets'), join(DIST, 'assets'), { recursive: true });
 console.log('Copied: assets/ → dist/assets/\n');
 
 for (const [file, content] of Object.entries(pages)) {
-  await writeFile(join(DIST, file), content, 'utf8');
-  console.log(`Generated: dist/${file}`);
+    await writeFile(join(DIST, file), content, 'utf8');
+    console.log(`Generated: dist/${file}`);
 }
 
 console.log('\nBuild complete! Output in dist/');

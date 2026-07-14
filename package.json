@@ -2,7 +2,7 @@
   "name": "save-us",
   "version": "1.0.0",
   "private": true,
-  "description": "Site web de l'ONG Save Us",
+  "description": "Site web de l'association Save Us",
   "scripts": {
     "setup": "node scripts/setup.mjs",
     "build:site": "node scripts/build-site.mjs",
