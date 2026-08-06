@@ -208,13 +208,6 @@ const footer = `
                         <h3 class="ul-footer-widget-title">Dernières actualités</h3>
                         <div class="ul-blog-sidebar-posts">
                             <div class="ul-blog-sidebar-post ul-footer-post">
-                                <div class="img"><img src="assets/img/blog-b-1.jpg" alt=""></div>
-                                <div class="txt">
-                                    <span class="date"><span class="icon"><i class="flaticon-calendar"></i></span><span>15 Mars 2025</span></span>
-                                    <h4 class="title"><a href="actualite-details.html?id=campagne2025">Campagne Enfants d'abord 2025</a></h4>
-                                </div>
-                            </div>
-                            <div class="ul-blog-sidebar-post ul-footer-post">
                                 <div class="img"><img src="assets/img/why-join.jpg" alt=""></div>
                                 <div class="txt">
                                     <span class="date"><span class="icon"><i class="flaticon-calendar"></i></span><span>15 Déc. 2024</span></span>
@@ -466,45 +459,6 @@ const indexContent = `
                             class="flaticon-fast-forward-double-right-arrows-symbol"></i> Toutes les actualités</a>
                 </div>
                 <div class="row row-cols-md-3 row-cols-1 ul-bs-row gy-4">
-                    <div class="col">
-                        <div class="ul-blog ul-blog-2">
-                            <div class="ul-blog-img"><img src="assets/img/blog-b-1.jpg" alt="">
-                                <div class="date"><span class="number">15</span><span class="txt">Mar</span></div>
-                            </div>
-                            <div class="ul-blog-txt">
-                                <div class="ul-blog-infos">
-                                    <div class="ul-blog-info"><span class="icon"><i
-                                                class="flaticon-price-tag"></i></span><span class="text">Campagne</span>
-                                    </div>
-                                </div>
-                                <a href="actualite-details.html?id=campagne2025" class="ul-blog-title">Lancement de la
-                                    campagne « Enfants d'abord » 2025</a>
-                                <a href="actualite-details.html?id=campagne2025" class="ul-blog-btn">Lire la suite <span
-                                        class="icon"><i class="flaticon-next"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col">
-                        <div class="ul-blog ul-blog-2">
-                            <div class="ul-blog-img"><img src="assets/img/event-img.jpg" alt="">
-                                <div class="date"><span class="number">5</span><span class="txt">Jan</span></div>
-                            </div>
-                            <div class="ul-blog-txt">
-                                <div class="ul-blog-infos">
-                                    <div class="ul-blog-info"><span class="icon"><i
-                                                class="flaticon-account"></i></span><span class="text">Save Us</span>
-                                    </div>
-                                    <div class="ul-blog-info"><span class="icon"><i
-                                                class="flaticon-price-tag"></i></span><span
-                                            class="text">Bénévolat</span></div>
-                                </div>
-                                <a href="actualite-details.html?id=benevoles" class="ul-blog-title">Recrutement de 50
-                                    nouveaux bénévoles</a>
-                                <a href="actualite-details.html?id=benevoles" class="ul-blog-btn">Lire la suite <span
-                                        class="icon"><i class="flaticon-next"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
                        <div class="col">
                         <div class="ul-blog ul-blog-2">
                             <div class="ul-blog-img"><img src="assets/img/why-join.jpg" alt="">
@@ -654,9 +608,9 @@ const aProposPage = pageShell('À Propos', 'apropos', `
         <div class="ul-container">
             <div class="ul-stats-wrapper wow animate__fadeInUp">
                 <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1 ul-bs-row justify-content-center">
-                    <div class="col"><div class="ul-stats-item"><i class="flaticon-costumer"></i><span class="number">10+</span><span class="txt">Personnes aidées</span></div></div>
+                    <div class="col"><div class="ul-stats-item"><i class="flaticon-costumer"></i><span class="number">200+</span><span class="txt">Vies impactées</span></div></div>
                     <div class="col"><div class="ul-stats-item"><i class="flaticon-team"></i><span class="number">10+</span><span class="txt">Bénévoles</span></div></div>
-                    <div class="col"><div class="ul-stats-item"><i class="flaticon-package"></i><span class="number">2</span><span class="txt">Pays</span></div></div>
+                    <div class="col"><div class="ul-stats-item"><i class="flaticon-package"></i><span class="number">1</span><span class="txt">Pays d'intervention</span></div></div>
                     <div class="col"><div class="ul-stats-item"><i class="flaticon-relationship"></i><span class="number">10+</span><span class="txt">Donateurs</span></div></div>
                 </div>
             </div>
