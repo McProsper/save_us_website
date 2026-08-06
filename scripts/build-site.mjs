@@ -366,7 +366,6 @@ const indexContent = `
                                     </div>
                                     <ul class="block-list">
                                         <li>Formations</li>
-                                        // <li>Hébergement et soins médicaux</li>
                                         <li>Éducation et réinsertion</li>
                                     </ul>
                                 </div>
