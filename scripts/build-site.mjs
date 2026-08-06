@@ -138,7 +138,7 @@ const valuesSection = `
                     <div class="save-us-value-card">
                         <div class="save-us-value-card__icon save-us-value-card__icon--blue"><i class="flaticon-team"></i></div>
                         <h3>Accompagnement</h3>
-                        <p>Hébergement, soins, éducation et soutien psychologique pour reconstruire une vie digne.</p>
+                        <p>Soins, éducation et soutien psychologique pour reconstruire une vie digne.</p>
                     </div>
                 </div>
                 <div class="col wow animate__fadeInUp" data-wow-delay="0.2s">
@@ -346,7 +346,7 @@ const indexContent = `
                             <p class="ul-section-descr">Save Us est une association dédiée à l'éducation dans les zones
                                 de guerre.
 
-                                Créée en 2024 par Maéva Balla, notre objectif est de fournir un soutien éducatif et
+                                Créée en 2024 par Honorine Balla, notre objectif est de fournir un soutien éducatif et
                                 humanitaire aux enfants défavorisés.
 
                                 Nous croyons fermement que chaque enfant mérite une éducation et un avenir meilleur.</p>
@@ -366,7 +366,7 @@ const indexContent = `
                                     </div>
                                     <ul class="block-list">
                                         <li>Formations</li>
-                                        <li>Hébergement et soins médicaux</li>
+                                        // <li>Hébergement et soins médicaux</li>
                                         <li>Éducation et réinsertion</li>
                                     </ul>
                                 </div>
@@ -386,9 +386,9 @@ const indexContent = `
             <div class="ul-container">
                 <div class="ul-stats-wrapper wow animate__fadeInUp">
                     <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2 row-cols-xxs-1 ul-bs-row justify-content-center">
-                        <div class="col"><div class="ul-stats-item"><i class="flaticon-costumer"></i><span class="number">10+</span><span class="txt">Vies sauvées</span></div></div>
+                        <div class="col"><div class="ul-stats-item"><i class="flaticon-costumer"></i><span class="number">200+</span><span class="txt">Vies impactées</span></div></div>
                         <div class="col"><div class="ul-stats-item"><i class="flaticon-team"></i><span class="number">10+</span><span class="txt">Bénévoles actifs</span></div></div>
-                        <div class="col"><div class="ul-stats-item"><i class="flaticon-package"></i><span class="number">2</span><span class="txt">Pays d'intervention</span></div></div>
+                        <div class="col"><div class="ul-stats-item"><i class="flaticon-package"></i><span class="number">1</span><span class="txt">Pays d'intervention</span></div></div>
                         <div class="col"><div class="ul-stats-item"><i class="flaticon-relationship"></i><span class="number">10+</span><span class="txt">Donateurs</span></div></div>
                     </div>
                 </div>
@@ -411,7 +411,7 @@ const indexContent = `
                             <div class="card-img"><img src="assets/img/donation-3.jpg" alt="École mobile"></div>
                             <div class="card-body">
                                 <span class="card-tag">Éducation</span>
-                                <h3 class="card-title"><a href="activite-details.html?id=education">École mobile</a>
+                                <h3 class="card-title"><a href="activite-details.html?id=education">Partage de kits scolaires</a>
                                 </h3>
                                 <p class="card-excerpt">Continuité scolaire pour les enfants privés d'école à cause de
                                     la guerre.</p>
@@ -595,8 +595,8 @@ const indexPage = `${head('Accueil')}
 
 // --- ACTUALITES ---
 const actualitesCards = [
-    ['campagne2025', 'blog-b-1.jpg', '15', 'Mar', 'Campagne', "Lancement de la campagne « Enfants d'abord » 2025"],
-    ['benevoles', 'event-img.jpg', '5', 'Jan', 'Bénévolat', 'Recrutement de 50 nouveaux bénévoles'],
+    // ['campagne2025', 'blog-b-1.jpg', '15', 'Mar', 'Campagne', "Lancement de la campagne « Enfants d'abord » 2025"],
+    // ['benevoles', 'event-img.jpg', '5', 'Jan', 'Bénévolat', 'Recrutement de 50 nouveaux bénévoles'],
     ['bilan', 'why-join.jpg', '15', 'Déc', 'Bilan', 'Bilan 2024 : 50 vies impactées'],
 ].map(([id, img, day, month, cat, title]) => `
     <div class="col">
@@ -644,7 +644,7 @@ const aProposPage = pageShell('À Propos', 'apropos', `
                     <div class="ul-about-txt">
                         <span class="ul-section-sub-title ul-section-sub-title--2">Save Us</span>
                         <h2 class="ul-section-title">Une association au service des plus vulnérables</h2>
-                        <p class="ul-section-descr">Save Us est une association dédiée à l'éducation dans les zones de guerre. Créée en 2024 par Maéva Balla, notre objectif est de fournir un soutien éducatif et humanitaire aux enfants défavorisés. Nous croyons fermement que chaque enfant mérite une éducation et un avenir meilleur.</p>
+                        <p class="ul-section-descr">Save Us est une association dédiée à l'éducation dans les zones de guerre. Créée en 2024 par Honorine Balla, notre objectif est de fournir un soutien éducatif et humanitaire aux enfants défavorisés. Nous croyons fermement que chaque enfant mérite une éducation et un avenir meilleur.</p>
                         <p class="ul-section-descr">Notre équipe est composée de bénévoles passionnés qui travaillent sans relâche pour apporter de l'espoir et des opportunités aux enfants les plus vulnérables. Nous collaborons avec des partenaires locaux et internationaux pour maximiser notre impact et assurer la durabilité de nos actions.</p>
                     </div>
                 </div>
@@ -678,7 +678,7 @@ const aProposPage = pageShell('À Propos', 'apropos', `
                         <div class="ul-about-tab-img"><img src="assets/img/mission.jpg" alt="Notre Mission"></div>
                         <div class="ul-about-tab-txt">
                             <h3 class="ul-about-tab-title">Notre Mission</h3>
-                            <p class="ul-about-tab-descr">Sauver et protéger les enfants et les femmes victimes des conflits armés en leur offrant une formation et une réinsertion sécurisées, un hébergement digne, des soins médicaux et un accompagnement vers l'autonomie.</p>
+                            <p class="ul-about-tab-descr">Sauver et protéger les enfants et les femmes victimes des conflits armés en leur offrant une formation et une réinsertion sécurisées, des soins médicaux et un accompagnement vers l'autonomie.</p>
                             <ul class="ul-about-tab-list">
                                 <li>Extraire les populations civiles des zones de combat actives</li>
                                 <li>Assurer les besoins vitaux : abri, nourriture, eau, soins</li>
@@ -762,7 +762,7 @@ const faireUnDonPage = pageShell('Faire un don', 'don', `
                                 <div class="col-12"><div class="form-group"><label for="don-projet">Affecter mon don à</label>
                                     <select id="don-projet" name="projet">
                                         <option value="general">Fonds général (là où le besoin est le plus urgent)</option>
-                                        <option value="education">École mobile</option>
+                                        <option value="education">Partage de kits scolaires</option>
                                         <option value="psychologie">Soutien psychologique</option>
                                         <option value="reinsertion">Réinsertion & autonomie</option>
                                     </select>
@@ -882,7 +882,7 @@ const devenirBenevolePage = pageShell('Devenir bénévole', 'benevole', `
 
 // --- ACTIVITES ---
 const activitesList = [
-    ['education', 'donation-3.jpg', 'Éducation', 'École mobile', 'Continuité scolaire pour les enfants privés d\'école à cause de la guerre.'],
+    ['education', 'donation-3.jpg', 'Éducation', 'Partage de kits scolaires', 'Continuité scolaire pour les enfants privés d\'école à cause de la guerre.'],
     ['psychologie', 'blog-1.jpg', 'Bien-être', 'Soutien psychologique', 'Thérapie et groupes de parole pour surmonter les traumatismes de guerre.'],
     ['reinsertion', 'blog-2.jpg', 'Emploi', 'Réinsertion & autonomie', 'Formation professionnelle et aide à l\'emploi pour les femmes réfugiées.'],
 ].map(([id, img, tag, title, excerpt]) => `
