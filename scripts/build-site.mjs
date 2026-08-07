@@ -405,8 +405,7 @@ const indexContent = `
                                 <span class="card-tag">Éducation</span>
                                 <h3 class="card-title"><a href="activite-details.html?id=education">Partage de kits scolaires</a>
                                 </h3>
-                                <p class="card-excerpt">Continuité scolaire pour les enfants privés d'école à cause de
-                                    la guerre.</p>
+                                <p class="card-excerpt">Recensement d'enfants dans le besoin et en décrochage scolaire.</p>
                                 <a href="activite-details.html?id=education" class="card-link">Découvrir l'activité <i
                                         class="flaticon-next"></i></a>
                             </div>

@@ -5,13 +5,13 @@ const SAVE_US_ACTIVITES = {
     category: 'Éducation',
     image: 'assets/img/donation-3.jpg',
     excerpt: 'Continuité scolaire pour les enfants privés d\'école à cause de la guerre.',
-    zone: 'Zones de conflit',
-    beneficiaires: '10+ enfants',
-    date: '2024',
-    description: 'Des unités pédagogiques mobiles se déplacent dans les camps et centres d\'hébergement pour maintenir l\'accès à l\'éducation des enfants déscolarisés.',
-    challenge: 'La guerre interrompt brutalement le parcours scolaire, exposant les enfants à l\'analphabétisme et à l\'exploitation.',
-    solution: 'Enseignants bénévoles, matériel pédagogique adapté et programmes de soutien psychologique intégrés à l\'apprentissage.',
-    result: '10+ enfants ont repris un cursus adapté grâce à nos programmes éducatifs sur le terrain.'
+    zone: 'Founangue - Extrême-Nord Cameroun',
+    beneficiaires: '200+ enfants',
+    date: '2025',
+    description: 'Nos équipes travaillent pour fournir et maintenir l\'accès  à l\'éducation à travers la distribution de matériel didactique.',
+    challenge: 'Recensement d\'enfants dans le besoin et en décrochage scolaire.',
+    solution: 'Matériel pédagogique adapté, sensibilisation, etc.',
+    result: 'Plusieurs enfants ont pu poursuivre leur cursus sans se préoccuper d\'absence d\'éléments didactiques.'
   },
   psychologie: {
     id: 'psychologie',
@@ -33,7 +33,7 @@ const SAVE_US_ACTIVITES = {
     category: 'Emploi',
     image: 'assets/img/blog-2.jpg',
     excerpt: 'Formation professionnelle et aide à l\'emploi pour les femmes réfugiées.',
-    zone: 'Cameroun et partenaires internationaux',
+    zone: 'Cameroun',
     beneficiaires: '10+ femmes',
     date: '2024 – présent',
     description: 'Programmes de formation linguistique, compétences numériques et micro-crédits pour permettre aux femmes de reconstruire une vie autonome.',
@@ -59,5 +59,5 @@ const SAVE_US_ACTUALITES = {
       'Les chiffres clés : 10+ enfants scolarisés, 10+ familles accompagnées, 10+ femmes en formation et 2 pays d\'intervention.',
       'Ces résultats sont le fruit du dévouement de 10+ bénévoles et de la générosité de 10+ donateurs. Merci à tous.'
     ]
-  }
+  },
 };
