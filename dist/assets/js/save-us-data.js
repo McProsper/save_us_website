@@ -46,7 +46,7 @@ const SAVE_US_ACTIVITES = {
 const SAVE_US_ACTUALITES = {
   bilan: {
     id: 'bilan',
-    title: 'Bilan 2025 : 50 vies impactées',
+    title: 'Bilan 2025 : 200 vies impactées',
     category: 'Bilan',
     author: 'Direction Save Us',
     date: '15 Décembre 2024',

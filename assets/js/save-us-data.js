@@ -46,7 +46,7 @@ const SAVE_US_ACTIVITES = {
 const SAVE_US_ACTUALITES = {
   bilan: {
     id: 'bilan',
-    title: 'Bilan 2025 : 50 vies impactées',
+    title: 'Bilan 2025 : 200 vies impactées',
     category: 'Bilan',
     author: 'Direction Save Us',
     date: '15 Décembre 2024',
@@ -55,8 +55,7 @@ const SAVE_US_ACTUALITES = {
     image: 'assets/img/why-join.jpg',
     excerpt: 'Retour sur une année d\'interventions humanitaires au service de l\'éducation.',
     content: [
-      'L\'année 2024 restera gravée dans l\'histoire de Save Us : 50 enfants et femmes ont bénéficié directement de nos programmes sur le terrain.',
-      'Les chiffres clés : 10+ enfants scolarisés, 10+ familles accompagnées, 10+ femmes en formation et 2 pays d\'intervention.',
+      'L\'année 2025 restera gravée dans l\'histoire de Save Us : 200 enfants ont bénéficié directement de nos programmes sur le terrain.',
       'Ces résultats sont le fruit du dévouement de 10+ bénévoles et de la générosité de 10+ donateurs. Merci à tous.'
     ]
   },
