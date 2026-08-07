@@ -94,7 +94,7 @@ function loadActiviteDetail(container) {
           <p class="ul-event-details-descr"><strong>Solution :</strong> ${data.solution}</p>
           <h3 class="ul-event-inner-title">Résultats</h3>
           <p>${data.result}</p>
-          <p>Vous pouvez avoir une vue intégrale ici : <a>https://www.linkedin.com/posts/save-us-association_associtionhumanitaire-saveabrus-projetpilote-activity-7384261477118918656-tyo1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADuCWyMBYS727ej_qVqAfolTc9edIDgiZ6c</a> </p>
+          <p>Vous pouvez avoir une vue intégrale <a href="https://www.linkedin.com/posts/save-us-association_associtionhumanitaire-saveabrus-projetpilote-activity-7384261477118918656-tyo1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADuCWyMBYS727ej_qVqAfolTc9edIDgiZ6c">ici</a> </p>
         </div>
       </div>
       <div class="col-md-4">
