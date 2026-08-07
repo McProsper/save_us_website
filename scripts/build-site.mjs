@@ -211,7 +211,7 @@ const footer = `
                                 <div class="img"><img src="assets/img/why-join.jpg" alt=""></div>
                                 <div class="txt">
                                     <span class="date"><span class="icon"><i class="flaticon-calendar"></i></span><span>15 Déc. 2024</span></span>
-                                    <h4 class="title"><a href="actualite-details.html?id=bilan">Bilan 2024 : 50 vies impactées</a></h4>
+                                    <h4 class="title"><a href="actualite-details.html?id=bilan">Bilan 2025 : 50 vies impactées</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -472,7 +472,7 @@ const indexContent = `
                                                 class="flaticon-price-tag"></i></span><span class="text">Bilan</span>
                                     </div>
                                 </div>
-                                <a href="actualite-details.html?id=bilan" class="ul-blog-title">Bilan 2024 : 50 vies
+                                <a href="actualite-details.html?id=bilan" class="ul-blog-title">Bilan 2025 : 50 vies
                                     impactées</a>
                                 <a href="actualite-details.html?id=bilan" class="ul-blog-btn">Lire la suite <span
                                         class="icon"><i class="flaticon-next"></i></span></a>
@@ -549,7 +549,7 @@ const indexPage = `${head('Accueil')}
 const actualitesCards = [
     // ['campagne2025', 'blog-b-1.jpg', '15', 'Mar', 'Campagne', "Lancement de la campagne « Enfants d'abord » 2025"],
     // ['benevoles', 'event-img.jpg', '5', 'Jan', 'Bénévolat', 'Recrutement de 50 nouveaux bénévoles'],
-    ['bilan', 'why-join.jpg', '15', 'Déc', 'Bilan', 'Bilan 2024 : 50 vies impactées'],
+    ['bilan', 'why-join.jpg', '15', 'Déc', 'Bilan', 'Bilan 2025 : 50 vies impactées'],
 ].map(([id, img, day, month, cat, title]) => `
     <div class="col">
         <div class="ul-blog ul-blog-2">
