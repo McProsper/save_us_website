@@ -3172,11 +3172,12 @@ button {
 }
 .ul-footer-container {
   max-width: clamp(1010px, 61.59vw, 1172px);
-  margin: auto;
+  padding: 20px 15px;
 }
 @media screen and (max-width: 1199px) {
   .ul-footer-container {
-    padding: 0 15px;
+    padding: 20px 15px;
+    
   }
 }
 .ul-footer-top {
@@ -3190,7 +3191,7 @@ button {
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
@@ -3204,12 +3205,13 @@ button {
 @media screen and (max-width: 991px) {
   .ul-footer-top-contact-infos {
     flex-wrap: wrap;
-    justify-content: center;
+    
   }
 }
 @media screen and (max-width: 767px) {
   .ul-footer-top-contact-infos {
     justify-content: flex-start;
+    
   }
 }
 .ul-footer-top-contact-info {

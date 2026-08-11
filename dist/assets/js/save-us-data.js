@@ -11,7 +11,7 @@ const SAVE_US_ACTIVITES = {
     description: 'Nos équipes travaillent pour fournir et maintenir l\'accès  à l\'éducation à travers la distribution de matériel didactique.',
     challenge: 'Recensement d\'enfants dans le besoin et en décrochage scolaire.',
     solution: 'Matériel pédagogique adapté, sensibilisation, etc.',
-    result: 'Plusieurs enfants ont pu poursuivre leur cursus sans se préoccuper d\'absence d\'éléments didactiques.',
+    result: 'Plusieurs enfants ont pu poursuivre leur cursus sans se préoccuper d\'absence d\'éléments didactiques.'
   },
   psychologie: {
     id: 'psychologie',
