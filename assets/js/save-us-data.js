@@ -19,13 +19,13 @@ const SAVE_US_ACTIVITES = {
     category: 'Bien-être',
     image: 'assets/img/blog-1.jpg',
     excerpt: 'Thérapie et groupes de parole pour surmonter les traumatismes de guerre.',
-    zone: 'Tous nos centres',
-    beneficiaires: '10+ personnes',
-    date: '2023 – présent',
-    description: 'Psychologues et travailleurs sociaux accompagnent enfants et femmes victimes de violences, de pertes familiales et de déplacements forcés.',
-    challenge: 'Le trauma post-traumatique non traité handicape la reconstruction et expose à des risques de dépression chronique.',
-    solution: 'Séances individuelles, art-thérapie pour enfants et groupes de soutien entre pairs animés par des professionnels bénévoles.',
-    result: '78 % des participantes rapportent une amélioration significative de leur état émotionnel après 3 mois.'
+    zone: '',
+    beneficiaires: '',
+    date: '',
+    description: 'Cette activité est à venir, prévue pour 2027.',
+    challenge: '',
+    solution: '',
+    result: ''
   },
   reinsertion: {
     id: 'reinsertion',
@@ -33,13 +33,13 @@ const SAVE_US_ACTIVITES = {
     category: 'Emploi',
     image: 'assets/img/blog-2.jpg',
     excerpt: 'Formation professionnelle et aide à l\'emploi pour les femmes réfugiées.',
-    zone: 'Cameroun',
-    beneficiaires: '10+ femmes',
-    date: '2024 – présent',
-    description: 'Programmes de formation linguistique, compétences numériques et micro-crédits pour permettre aux femmes de reconstruire une vie autonome.',
-    challenge: 'Sans revenus stables, les femmes réfugiées restent dépendantes de l\'aide humanitaire et vulnérables à l\'exploitation.',
-    solution: 'Partenariats avec des entreprises locales, mentorat et accompagnement administratif pour l\'accès à l\'emploi.',
-    result: '10+ femmes ont obtenu un emploi ou lancé une activité génératrice de revenus.'
+    zone: '',
+    beneficiaires: '',
+    date: '',
+    description: 'Cette activité est à venir, prévue pour 2027.',
+    challenge: '',
+    solution: '',
+    result: ''
   }
 };
 

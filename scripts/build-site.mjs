@@ -43,9 +43,9 @@ const sidebar = `
             <span class="ul-sidebar-footer-title">Suivez-nous</span>
             <div class="ul-sidebar-footer-social">
                 <a href="#"><i class="flaticon-facebook"></i></a>
-                <a href="#"><i class="flaticon-twitter"></i></a>
+                <!-- <a href="#"><i class="flaticon-twitter"></i></a> -->
                 <a href="#"><i class="flaticon-instagram"></i></a>
-                <a href="#"><i class="flaticon-youtube"></i></a>
+                <!-- <a href="#"><i class="flaticon-youtube"></i></a> -->
             </div>
         </div>
     </div>`;
@@ -168,14 +168,14 @@ const footer = `
                         <div class="ul-footer-top-contact-info-icon"><div class="ul-footer-top-contact-info-icon-inner"><i class="flaticon-email"></i></div></div>
                         <div class="ul-footer-top-contact-info-txt">
                             <span class="ul-footer-top-contact-info-label">Email</span>
-                            <h5 class="ul-footer-top-contact-info-address"><a href="mailto:save.us.cm@gmail.com">save.us.cm@gmail.com</a></h5>
+                            <h5 class="ul-footer-top-contact-info-address"><a href="mailto:maevaballa4@gmail.com">maevaballa4@gmail.com</a></h5>
                         </div>
                     </div>
                     <div class="ul-footer-top-contact-info">
                         <div class="ul-footer-top-contact-info-icon"><div class="ul-footer-top-contact-info-icon-inner"><i class="flaticon-telephone-call-1"></i></div></div>
                         <div class="ul-footer-top-contact-info-txt">
                             <span class="ul-footer-top-contact-info-label">Contact</span>
-                            <h5 class="ul-footer-top-contact-info-address"><a href="tel:+33142000000">+237 6 99 90 99 90</a></h5>
+                            <h5 class="ul-footer-top-contact-info-address"><a href="tel:+237694251062">+237 6 94 25 10 62</a></h5>
                         </div>
                     </div>
                 </div>
@@ -186,12 +186,12 @@ const footer = `
                 <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
                     <div class="ul-footer-about">
                         ${logo('white')}
-                        <p class="ul-footer-about-txt">Association humanitaire dédiée à l'éducation des femmes et enfants victimes des conflits armés à travers le monde.</p>
+                        <p class="ul-footer-about-txt">Association humanitaire dédiée à l'éducation des femmes et enfants victimes des conflits armés au Cameroun.</p>
                         <div class="ul-footer-socials">
                             <a href="#"><i class="flaticon-facebook"></i></a>
-                            <a href="#"><i class="flaticon-twitter"></i></a>
+                            <!-- <a href="#"><i class="flaticon-twitter"></i></a> -->
                             <a href="#"><i class="flaticon-linkedin-big-logo"></i></a>
-                            <a href="#"><i class="flaticon-youtube"></i></a>
+                            <!-- <a href="#"><i class="flaticon-youtube"></i></a> -->
                         </div>
                     </div>
                     <div class="ul-footer-widget">
@@ -210,7 +210,7 @@ const footer = `
                             <div class="ul-blog-sidebar-post ul-footer-post">
                                 <div class="img"><img src="assets/img/why-join.jpg" alt=""></div>
                                 <div class="txt">
-                                    <span class="date"><span class="icon"><i class="flaticon-calendar"></i></span><span>15 Déc. 2024</span></span>
+                                    <span class="date"><span class="icon"><i class="flaticon-calendar"></i></span><span>2025</span></span>
                                     <h4 class="title"><a href="actualite-details.html?id=bilan">Bilan 2025 : 200 vies impactées</a></h4>
                                 </div>
                             </div>
@@ -701,7 +701,7 @@ const faireUnDonPage = pageShell('Faire un don', 'don', `
                                 <div class="col-md-6"><div class="form-group"><label for="don-prenom">Prénom *</label><input type="text" id="don-prenom" name="prenom" required placeholder="Votre prénom"></div></div>
                                 <div class="col-md-6"><div class="form-group"><label for="don-nom">Nom *</label><input type="text" id="don-nom" name="nom" required placeholder="Votre nom"></div></div>
                                 <div class="col-md-6"><div class="form-group"><label for="don-email">Email *</label><input type="email" id="don-email" name="email" required placeholder="votre@email.com"></div></div>
-                                <div class="col-md-6"><div class="form-group"><label for="don-tel">Téléphone</label><input type="tel" id="don-tel" name="telephone" placeholder="+237 6 99 90 99 90"></div></div>
+                                <div class="col-md-6"><div class="form-group"><label for="don-tel">Téléphone</label><input type="tel" id="don-tel" name="telephone" placeholder="+237 6 94 25 10 62"></div></div>
                                 <div class="col-12"><div class="form-group"><label>Montant du don *</label>
                                     <div class="ul-donate-form mt-2" style="display:flex;flex-wrap:wrap;gap:10px">
                                         <div><input type="radio" name="donate-amount" id="d-25" value="25" checked hidden><label for="d-25" class="ul-donate-form-label">25 000 FCFA</label></div>
