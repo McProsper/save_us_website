@@ -597,28 +597,144 @@ body {
   color: var(--su-green) !important;
 }
 
-/* ---- Forms ---- */
-.ul-donate-form-extended input,
+/* ==========================================================================
+   1. FORMULAIRES & CHAMPS (Mise en page & Alignement)
+   ========================================================================== */
+
+/* Structure d'un groupe de champ (Label au-dessus de l'input) */
+.ul-donate-form-extended .form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 8px !important; /* Espacement entre le libellé et le champ */
+  width: 100%;
+}
+
+/* Style des libellés (labels) */
+.ul-donate-form-extended label {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  margin-bottom: 0 !important;
+}
+
+/* Normalisation des champs de saisie (Prénom, Nom, Email, Select, Textarea) */
+.ul-donate-form-extended input[type="text"],
+.ul-donate-form-extended input[type="email"],
+.ul-donate-form-extended input[type="tel"],
+.ul-donate-form-extended input[type="number"],
 .ul-donate-form-extended select,
 .ul-donate-form-extended textarea {
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  padding: 10px 14px;
   border-radius: var(--su-radius-sm) !important;
   border: 1.5px solid var(--su-gray-100) !important;
   font-family: var(--font-primary);
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* Focus sur les champs */
 .ul-donate-form-extended input:focus,
 .ul-donate-form-extended select:focus,
 .ul-donate-form-extended textarea:focus {
   border-color: var(--su-green) !important;
   box-shadow: 0 0 0 3px rgba(108, 235, 66, 0.15) !important;
+  outline: none;
 }
 
+/* Ajustement spécifique au textarea */
+.ul-donate-form-extended textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Formulaire de contact classique */
 .ul-contact-form input,
 .ul-contact-form textarea {
   border-radius: var(--su-radius-sm) !important;
 }
 
+
+/* ==========================================================================
+   2. SECTEUR MONTANT DU DON (Boutons radio & Grille)
+   ========================================================================== */
+
+/* Alignement en grille fluide des montants de don */
+.ul-donate-form {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)) !important;
+  gap: 10px !important;
+  width: 100%;
+}
+
+.ul-donate-form > div {
+  width: 100%;
+}
+
+/* Labels stylisés comme des boutons */
+.ul-donate-form-label {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  background: var(--su-white, #ffffff);
+  border: 1.5px solid var(--su-gray-100, #e0e0e0);
+  border-radius: var(--su-radius-sm) !important;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* Effet au survol et lorsque le bouton radio est sélectionné */
+.ul-donate-form input[type="radio"]:checked + .ul-donate-form-label,
+.ul-donate-form-label:hover {
+  border-color: var(--su-green) !important;
+  background: var(--su-green-light, #eafbe7) !important;
+  color: var(--su-green-dark, #1b5e20);
+}
+
+/* Champ personnalisé de montant */
+.ul-donate-form-custom-input {
+  width: 100% !important;
+  text-align: center;
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  font-weight: 600;
+}
+
+.ul-donate-form-custom-input:focus {
+  box-shadow: none !important;
+}
+
+
+/* ==========================================================================
+   3. CHECKBOX, FEEDBACK & AUTRES COMPOSANTS
+   ========================================================================== */
+
+/* Checkbox */
+.ul-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.ul-checkbox {
+  border-color: var(--su-green) !important;
+}
+
+input:checked + .ul-checkbox {
+  background: var(--su-green) !important;
+}
+
+/* Message de succès */
 .form-success-msg {
   background: var(--su-green-light);
   color: var(--su-green-dark);
@@ -630,6 +746,7 @@ body {
   font-weight: 600;
 }
 
+/* Compétences bénévole */
 .volunteer-skills label {
   border-radius: 50px !important;
   font-weight: 500;
@@ -647,7 +764,12 @@ body {
   font-weight: 700;
 }
 
-/* ---- Project / details ---- */
+
+/* ==========================================================================
+   4. DÉTAILS PROJET, ACCORDÉON & DIVERS
+   ========================================================================== */
+
+/* Projet & Détails */
 .ul-project-details-infos {
   border-radius: var(--su-radius) !important;
   border-top: 4px solid var(--su-green) !important;
@@ -663,7 +785,7 @@ body {
   font-weight: 800 !important;
 }
 
-/* ---- Accordion ---- */
+/* Accordéon */
 .ul-single-accordion-item.open .ul-single-accordion-item__header {
   background: var(--su-green-light) !important;
 }
@@ -672,13 +794,13 @@ body {
   background: var(--su-gradient) !important;
 }
 
-/* ---- Preloader ---- */
+/* Preloader */
 .loader {
   border-top-color: var(--su-green) !important;
   border-right-color: var(--su-blue) !important;
 }
 
-/* ---- Sidebar ---- */
+/* Sidebar */
 .ul-sidebar {
   background: var(--su-white) !important;
 }
@@ -688,21 +810,16 @@ body {
   color: var(--su-white) !important;
 }
 
-/* ---- Section backgrounds ---- */
+/* Section Fond */
 .save-us-section-alt {
   background: var(--su-gray-50);
 }
 
-/* ---- Checkbox ---- */
-.ul-checkbox {
-  border-color: var(--su-green) !important;
-}
 
-input:checked + .ul-checkbox {
-  background: var(--su-green) !important;
-}
+/* ==========================================================================
+   5. RESPONSIVE (MEDIA QUERIES)
+   ========================================================================== */
 
-/* ---- Responsive tweaks ---- */
 @media (max-width: 991px) {
   .ul-header-bottom {
     background: var(--su-white);
@@ -722,6 +839,13 @@ input:checked + .ul-checkbox {
   .save-us-cta-band__btns {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Bascule la grille des montants en 2 colonnes sur très petit écran */
+  .ul-donate-form {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 

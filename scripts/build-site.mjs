@@ -489,7 +489,7 @@ const indexContent = `
             <div class="ul-container">
                 <div class="ul-donate-form-section">
                     <div class="row justify-content-between align-items-center">
-                        <div class="col-lg-6 position-relative">
+                        <div class="col-lg-6 position-relative p-4">
                             <div class="ul-donate-form-wrapper">
                                 <h3 class="ul-donate-form-title">Faites un don maintenant</h3>
                                 <form action="#" class="ul-donate-form save-us-form">
@@ -513,8 +513,8 @@ const indexContent = `
                         <div class="col-xl-5 col-lg-6">
                             <div class="ul-donate-form-section-txt">
                                 <span class="ul-section-sub-title text-white">Agir maintenant</span>
-                                <h2 class="ul-section-title text-white">Chaque cfa sauve une vie</h2>
-                                <p class="text-white mb-4">50 000 FCFA financent un kit de survie. 100 000 FCFA couvrent les soins médicaux d'urgence. 250 000 FCFA permettent l'évacuation d'une famille.</p>
+                                <h2 class="ul-section-title text-white">Chaque cfa reconstruit une vie</h2>
+                                <p class="text-white mb-4">10 000 FCFA financent un kit scolaire. 25 000 FCFA couvrent une scolarité. 50 000 FCFA aident à la formation d'une femme et ainsi contribue à son indépendance financière.</p>
                                 <div class="ul-donation-progress">
                                     <div class="donation-progress-container ul-progress-container">
                                         <div class="donation-progressbar ul-progressbar" data-ul-progress-value="72"><div class="donation-progress-label ul-progress-label"></div></div>
@@ -694,39 +694,84 @@ const faireUnDonPage = pageShell('Faire un don', 'don', `
             </div>
             <div class="row gy-5 align-items-start">
                 <div class="col-lg-7">
-                    <div class="ul-donate-form-wrapper save-us-form-card">
-                        <h3 class="ul-donate-form-title">Formulaire de don</h3>
-                        <form action="#" class="ul-donate-form-extended save-us-form">
-                            <div class="row ul-bs-row gy-3">
-                                <div class="col-md-6"><div class="form-group"><label for="don-prenom">Prénom *</label><input type="text" id="don-prenom" name="prenom" required placeholder="Votre prénom"></div></div>
-                                <div class="col-md-6"><div class="form-group"><label for="don-nom">Nom *</label><input type="text" id="don-nom" name="nom" required placeholder="Votre nom"></div></div>
-                                <div class="col-md-6"><div class="form-group"><label for="don-email">Email *</label><input type="email" id="don-email" name="email" required placeholder="votre@email.com"></div></div>
-                                <div class="col-md-6"><div class="form-group"><label for="don-tel">Téléphone</label><input type="tel" id="don-tel" name="telephone" placeholder="+237 6 94 25 10 62"></div></div>
-                                <div class="col-12"><div class="form-group"><label>Montant du don *</label>
-                                    <div class="ul-donate-form mt-2" style="display:flex;flex-wrap:wrap;gap:10px">
-                                        <div><input type="radio" name="donate-amount" id="d-25" value="25" checked hidden><label for="d-25" class="ul-donate-form-label">25 000 FCFA</label></div>
-                                        <div><input type="radio" name="donate-amount" id="d-50" value="50" hidden><label for="d-50" class="ul-donate-form-label">50 000 FCFA</label></div>
-                                        <div><input type="radio" name="donate-amount" id="d-100" value="100" hidden><label for="d-100" class="ul-donate-form-label">100 000 FCFA</label></div>
-                                        <div><input type="radio" name="donate-amount" id="d-250" value="250" hidden><label for="d-250" class="ul-donate-form-label">250 000 FCFA</label></div>
-                                        <div><input type="radio" name="donate-amount" id="d-custom" value="custom" hidden><label for="d-custom" class="ul-donate-form-label"><input type="number" name="custom-amount" placeholder="Autre montant" class="ul-donate-form-custom-input" style="width:100px"></label></div>
+                        <div class="ul-donate-form-wrapper save-us-form-card">
+                            <h3 class="ul-donate-form-title">Formulaire de don</h3>
+                            <form action="#" class="ul-donate-form-extended save-us-form">
+                                <div class="row ul-bs-row gy-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group"><label for="don-prenom">Prénom *</label><input
+                                                type="text" id="don-prenom" name="prenom" required
+                                                placeholder="Votre prénom"></div>
                                     </div>
-                                </div></div>
-                                <div class="col-12"><div class="form-group"><label for="don-projet">Affecter mon don à</label>
-                                    <select id="don-projet" name="projet">
-                                        <option value="general">Fonds général (là où le besoin est le plus urgent)</option>
-                                        <option value="education">Partage de kits scolaires</option>
-                                        <option value="psychologie">Soutien psychologique</option>
-                                        <option value="reinsertion">Réinsertion & autonomie</option>
-                                    </select>
-                                </div></div>
-                                <div class="col-12"><div class="form-group"><label for="don-message">Message (optionnel)</label><textarea id="don-message" name="message" rows="3" placeholder="Un mot pour nos équipes..."></textarea></div></div>
-                                <div class="col-12"><label class="ul-checkbox-wrapper"><input type="checkbox" name="recu" id="don-recu"><span class="ul-checkbox"><i class="flaticon-tick"></i></span><span class="ul-checkbox-txt">Je souhaite recevoir un reçu fiscal</span></label></div>
-                                <div class="col-12"><button type="submit" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Confirmer mon don</button></div>
-                                <div class="col-12"><div class="form-success-msg d-none">Merci infiniment ! Votre don a bien été enregistré. Un email de confirmation vous sera envoyé.</div></div>
-                            </div>
-                        </form>
+                                    <div class="col-md-6">
+                                        <div class="form-group"><label for="don-nom">Nom *</label><input type="text"
+                                                id="don-nom" name="nom" required placeholder="Votre nom"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group"><label for="don-email">Email *</label><input
+                                                type="email" id="don-email" name="email" required
+                                                placeholder="votre@email.com"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group"><label for="don-tel">Téléphone</label><input type="tel"
+                                                id="don-tel" name="telephone" placeholder="+237 6 94 25 10 62"></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group"><label>Montant du don *</label>
+                                            <div class="ul-donate-form mt-2"
+                                                style="display:flex;flex-wrap:wrap;gap:10px">
+                                                <div><input type="radio" name="donate-amount" id="d-25" value="25"
+                                                        checked hidden><label for="d-25" class="ul-donate-form-label">25
+                                                        000 FCFA</label></div>
+                                                <div><input type="radio" name="donate-amount" id="d-50" value="50"
+                                                        hidden><label for="d-50" class="ul-donate-form-label">50 000
+                                                        FCFA</label></div>
+                                                <div><input type="radio" name="donate-amount" id="d-100" value="100"
+                                                        hidden><label for="d-100" class="ul-donate-form-label">100 000
+                                                        FCFA</label></div>
+                                                <div><input type="radio" name="donate-amount" id="d-250" value="250"
+                                                        hidden><label for="d-250" class="ul-donate-form-label">250 000
+                                                        FCFA</label></div>
+                                                <div><input type="radio" name="donate-amount" id="d-custom"
+                                                        value="custom" hidden><label for="d-custom"
+                                                        class="ul-donate-form-label"><input type="number"
+                                                            name="custom-amount" placeholder="Autre montant"
+                                                            class="ul-donate-form-custom-input"
+                                                            style="width:100px"></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group"><label for="don-projet">Affecter mon don à</label>
+                                            <select id="don-projet" name="projet">
+                                                <option value="general">Fonds général (là où le besoin est le plus
+                                                    urgent)</option>
+                                                <option value="education">Partage de kits scolaires</option>
+                                                <option value="psychologie">Soutien psychologique</option>
+                                                <option value="reinsertion">Réinsertion & autonomie</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group"><label for="don-message">Message
+                                                (optionnel)</label><textarea id="don-message" name="message" rows="3"
+                                                placeholder="Un mot pour nos équipes..."></textarea></div>
+                                    </div>
+                                    <div class="col-12"><label class="ul-checkbox-wrapper"><input type="checkbox"
+                                                name="recu" id="don-recu"><span class="ul-checkbox"><i
+                                                    class="flaticon-tick"></i></span><span class="ul-checkbox-txt">Je
+                                                souhaite recevoir un reçu fiscal</span></label></div>
+                                    <div class="col-12"><button type="submit" class="ul-btn"><i
+                                                class="flaticon-fast-forward-double-right-arrows-symbol"></i> Confirmer
+                                            mon don</button></div>
+                                    <div class="col-12">
+                                        <div class="form-success-msg d-none">Merci infiniment ! Votre don a bien été
+                                            enregistré. Un email de confirmation vous sera envoyé.</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
                 <div class="col-lg-5">
                     <div class="ul-donate-form-section-txt" style="border-radius:20px;padding:40px">
                         <span class="ul-section-sub-title text-white">Impact de votre don</span>
