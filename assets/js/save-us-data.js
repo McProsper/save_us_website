@@ -22,10 +22,10 @@ const SAVE_US_ACTIVITES = {
     zone: '',
     beneficiaires: '',
     date: '',
-    description: 'Cette activité est à venir, prévue pour 2027.',
-    challenge: '',
-    solution: '',
-    result: ''
+    description: 'Psychologues et travailleurs sociaux accompagnent enfants et femmes victimes de violences, de pertes familiales et de déplacements forcés.',
+    challenge: 'Le trauma post-traumatique non traité handicape la reconstruction et expose à des riques de dépression chronique.',
+    solution: 'Séances individuelles, art-thérapie pour enfants et groupes de soutien entre pairs animés par des profesionnels bénévoles.',
+    result: 'Bientôt vous pourrez remarquer les résultats...'
   },
   reinsertion: {
     id: 'reinsertion',
@@ -36,10 +36,10 @@ const SAVE_US_ACTIVITES = {
     zone: '',
     beneficiaires: '',
     date: '',
-    description: 'Cette activité est à venir, prévue pour 2027.',
-    challenge: '',
-    solution: '',
-    result: ''
+    description: 'Programmes de formation linguistique, compétences numériques et micro-crédits pour permettre aux femmes de reconstruire une vie autonome.',
+    challenge: 'Sans revenus stables, les femmes restent dépendantes de l\'aide humanitaire et vulnérable à l\'exclusion sociale.',
+    solution: 'Partenariats avec des entreprises, associations, etc. pour offrir des formations professionnelles adaptées et des opportunités d\'emploi.',
+    result: 'Bientôt vous pourrez remarquer les résultats...'
   }
 };
 
