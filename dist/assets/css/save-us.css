@@ -735,15 +735,25 @@ input:checked + .ul-checkbox {
 }
 
 /* Message de succès */
-.form-success-msg {
-  background: var(--su-green-light);
-  color: var(--su-green-dark);
-  border: 1px solid rgba(108, 235, 66, 0.3);
+.form-success-msg,
+.form-error-msg {
   padding: 16px 20px;
   border-radius: var(--su-radius-sm);
   margin-top: 20px;
   text-align: center;
   font-weight: 600;
+}
+
+.form-success-msg {
+  background: var(--su-green-light);
+  color: var(--su-green-dark);
+  border: 1px solid rgba(108, 235, 66, 0.3);
+}
+
+.form-error-msg {
+  background: #fde8e8;
+  color: #8a1c1c;
+  border: 1px solid rgba(138, 28, 28, 0.2);
 }
 
 /* Compétences bénévole */

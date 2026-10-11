@@ -697,7 +697,7 @@ const faireUnDonPage = pageShell('Faire un don', 'don', `
                 <div class="col-lg-7">
                         <div class="ul-donate-form-wrapper save-us-form-card">
                             <h3 class="ul-donate-form-title">Formulaire de don</h3>
-                            <form action="#" class="ul-donate-form-extended save-us-form">
+                            <form action="#" class="ul-donate-form-extended save-us-form" data-form="donate">
                                 <div class="row ul-bs-row gy-3">
                                     <div class="col-md-6">
                                         <div class="form-group"><label for="don-prenom">Prénom *</label><input
@@ -768,6 +768,7 @@ const faireUnDonPage = pageShell('Faire un don', 'don', `
                                     <div class="col-12">
                                         <div class="form-success-msg d-none">Merci infiniment ! Votre don a bien été
                                             enregistré. Un email de confirmation vous sera envoyé.</div>
+                                        <div class="form-error-msg d-none" role="alert"></div>
                                     </div>
                                 </div>
                             </form>
@@ -840,7 +841,7 @@ const devenirBenevolePage = pageShell('Devenir bénévole', 'benevole', `
             </div>
         </div>
         <div class="ul-inner-contact-container">
-            <form action="#" class="ul-contact-form ul-form save-us-form ul-donate-form-extended">
+            <form action="#" class="ul-contact-form ul-form save-us-form ul-donate-form-extended" data-form="volunteer">
                 <div class="row row-cols-md-2 row-cols-1 ul-bs-row">
                     <div class="col"><div class="form-group"><input type="text" name="prenom" required placeholder="Prénom *"></div></div>
                     <div class="col"><div class="form-group"><input type="text" name="nom" required placeholder="Nom *"></div></div>
@@ -872,6 +873,7 @@ const devenirBenevolePage = pageShell('Devenir bénévole', 'benevole', `
                     <div class="col-12 text-center">
                         <button type="submit" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Envoyer ma candidature</button>
                         <div class="form-success-msg d-none">Merci ! Votre candidature a été envoyée. Notre équipe vous contactera sous 5 jours ouvrés.</div>
+                        <div class="form-error-msg d-none" role="alert"></div>
                     </div>
                 </div>
             </form>
@@ -945,5 +947,11 @@ for (const [file, content] of Object.entries(pages)) {
     await writeFile(join(DIST, file), content, 'utf8');
     console.log(`Generated: dist/${file}`);
 }
+
+await writeFile(
+    join(DIST, '_redirects'),
+    '/api/*  /.netlify/functions/:splat  200\n',
+    'utf8'
+);
 
 console.log('\nBuild complete! Output in dist/');

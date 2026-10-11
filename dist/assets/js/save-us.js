@@ -157,8 +157,13 @@ function loadActualiteDetail(container) {
 
 function initForms() {
   document.querySelectorAll('.save-us-form').forEach((form) => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      const endpoint = form.dataset.form;
+      if (endpoint === 'donate' || endpoint === 'volunteer') {
+        await submitMailForm(form, `/api/${endpoint}`);
+        return;
+      }
       const msg = form.querySelector('.form-success-msg');
       if (msg) {
         msg.classList.remove('d-none');
@@ -167,4 +172,78 @@ function initForms() {
       }
     });
   });
+}
+
+function collectFormPayload(form) {
+  const data = {};
+  const skills = [];
+  new FormData(form).forEach((value, key) => {
+    if (key === 'skills') {
+      skills.push(String(value));
+      return;
+    }
+    data[key] = String(value);
+  });
+  if (skills.length) data.skills = skills;
+
+  if (form.dataset.form === 'donate') {
+    const selected = form.querySelector('input[name="donate-amount"]:checked');
+    data.montant = selected?.value || '';
+    data.customAmount = form.querySelector('[name="custom-amount"]')?.value || '';
+    data.recu = Boolean(form.querySelector('[name="recu"]')?.checked);
+  }
+
+  if (form.dataset.form === 'volunteer') {
+    data.rgpd = Boolean(form.querySelector('[name="rgpd"]')?.checked);
+  }
+
+  return data;
+}
+
+async function submitMailForm(form, url) {
+  const success = form.querySelector('.form-success-msg');
+  const error = form.querySelector('.form-error-msg');
+  const button = form.querySelector('button[type="submit"]');
+  const originalLabel = button ? button.innerHTML : '';
+
+  if (success) success.classList.add('d-none');
+  if (error) {
+    error.classList.add('d-none');
+    error.textContent = '';
+  }
+  if (button) {
+    button.disabled = true;
+    button.setAttribute('aria-busy', 'true');
+  }
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(collectFormPayload(form)),
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      if (response.status === 404) {
+        throw new Error('Le service d’envoi d’e-mails n’est pas disponible ici. Lancez « npm run dev » en local, ou redéployez sur Netlify.');
+      }
+      throw new Error(payload.error || 'L’envoi a échoué. Réessayez.');
+    }
+    form.reset();
+    if (success) {
+      success.classList.remove('d-none');
+      setTimeout(() => success.classList.add('d-none'), 8000);
+    }
+  } catch (err) {
+    if (error) {
+      error.textContent = err.message || 'L’envoi a échoué. Réessayez.';
+      error.classList.remove('d-none');
+    }
+  } finally {
+    if (button) {
+      button.disabled = false;
+      button.removeAttribute('aria-busy');
+      button.innerHTML = originalLabel;
+    }
+  }
 }
