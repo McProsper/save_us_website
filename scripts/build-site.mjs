@@ -42,9 +42,9 @@ const sidebar = `
         <div class="ul-sidebar-footer">
             <span class="ul-sidebar-footer-title">Suivez-nous</span>
             <div class="ul-sidebar-footer-social">
-                <a href="#"><i class="flaticon-instagram"></i></a>
+                <a href="https://www.instagram.com/save.uscm?psln=djBlYjVqZ3V1MHRp"><i class="flaticon-instagram"></i></a>
                 <!-- <a href="#"><i class="flaticon-twitter"></i></a> -->
-                <a href="#"><i class="flaticon-instagram"></i></a>
+                <a href="https://www.instagram.com/save.uscm?psln=djBlYjVqZ3V1MHRp"><i class="flaticon-instagram"></i></a>
                 <!-- <a href="#"><i class="flaticon-youtube"></i></a> -->
             </div>
         </div>
@@ -189,9 +189,9 @@ const footer = `
                         ${logo('white')}
                         <p class="ul-footer-about-txt">Association humanitaire dédiée à l'éducation des femmes et enfants victimes des conflits armés au Cameroun.</p>
                         <div class="ul-footer-socials">
-                            <a href="#"><i class="flaticon-instagram"></i></a>
+                            <a href="https://www.instagram.com/save.uscm?psln=djBlYjVqZ3V1MHRp"><i class="flaticon-instagram"></i></a>
                             <!-- <a href="#"><i class="flaticon-twitter"></i></a> -->
-                            <a href="#"><i class="flaticon-linkedin-big-logo"></i></a>
+                            <a href="https://www.linkedin.com/company/save-us-association/posts/"><i class="flaticon-linkedin-big-logo"></i></a>
                             <!-- <a href="#"><i class="flaticon-youtube"></i></a> -->
                         </div>
                     </div>
