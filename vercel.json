@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build:site",
+  "outputDirectory": "dist",
+  "framework": null,
+  "functions": {
+    "api/donate.mjs": {
+      "includeFiles": "lib/**"
+    },
+    "api/volunteer.mjs": {
+      "includeFiles": "lib/**"
+    }
+  }
+}
