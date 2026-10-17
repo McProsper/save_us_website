@@ -1,4 +1,4 @@
-import { HttpError, sendVolunteerEmails } from '../../lib/mail.mjs';
+import { HttpError, sendDonateEmails } from '../lib/mail.mjs';
 
 const headers = {
   'Content-Type': 'application/json',
@@ -16,7 +16,7 @@ export const handler = async (event) => {
 
   try {
     const data = JSON.parse(event.body || '{}');
-    await sendVolunteerEmails(data);
+    await sendDonateEmails(data);
     return { statusCode: 200, headers, body: JSON.stringify({ success: true }) };
   } catch (err) {
     if (err instanceof SyntaxError) {
