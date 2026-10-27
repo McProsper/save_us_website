@@ -9,8 +9,10 @@ const DIST = join(ROOT, 'dist');
 const logo = (variant = 'default') => {
     if (variant === 'white') {
         return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/save-us-logo.png" alt="Save Us" class="save-us-logo"></a>`;
+        return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/logo-report.jpg" alt="Save Us" class="save-us-logo"></a>`;
     }
     return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/save-us-logo.png" alt="Save Us" class="save-us-logo" onerror="this.onerror=null;this.src='assets/img/save-us-logo.svg'"></a>`;
+    return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/logo-report.jpg" alt="Save Us" class="save-us-logo" onerror="this.onerror=null;this.src='assets/img/logo-report.jpg'"></a>`;
 };
 
 const head = (title) => `<!DOCTYPE html>
@@ -947,11 +949,5 @@ for (const [file, content] of Object.entries(pages)) {
     await writeFile(join(DIST, file), content, 'utf8');
     console.log(`Generated: dist/${file}`);
 }
-
-await writeFile(
-    join(DIST, '_redirects'),
-    '/api/*  /.netlify/functions/:splat  200\n',
-    'utf8'
-);
 
 console.log('\nBuild complete! Output in dist/');

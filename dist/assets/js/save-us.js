@@ -225,7 +225,7 @@ async function submitMailForm(form, url) {
     const payload = await response.json().catch(() => ({}));
     if (!response.ok) {
       if (response.status === 404) {
-        throw new Error('Le service d’envoi d’e-mails n’est pas disponible ici. Lancez « npm run dev » en local, ou redéployez sur Netlify.');
+        throw new Error('Le service d’envoi d’e-mails n’est pas disponible ici. Lancez « npm run dev » en local, ou redéployez sur Vercel.');
       }
       throw new Error(payload.error || 'L’envoi a échoué. Réessayez.');
     }
