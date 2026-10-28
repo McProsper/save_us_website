@@ -286,8 +286,7 @@ const indexContent = `
                             <div class="wow animate__fadeInUp">
                                 <span class="save-us-hero-badge">Association humanitaire active</span>
                                 <span class="ul-banner-sub-title ul-section-sub-title">Ensemble, sauvons des vies</span>
-                                 <h3 class="ul-banner-title">Soutenir l'éducation dans les zones de guerre n'est pas un
-                                    simple geste de bonté, c'est semer l'avenir pour tous.</h3>
+                                 <h3 class="ul-banner-title">Soutenir l'éducation dans les zones de conflit, c’est donner aux enfants les moyens de rêver, de grandir et de construire demain.</h3>
                                 <p class="ul-banner-descr">Ensemble, nous faisons la différence pour ceux qui en ont
                                     besoin.</p>
                                 <div class="ul-banner-btns">
