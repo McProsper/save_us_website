@@ -6,13 +6,33 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const DIST = join(ROOT, 'dist');
 
-const logo = (variant = 'default') => {
-    if (variant === 'white') {
-        return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/save-us-logo.png" alt="Save Us" class="save-us-logo"></a>`;
-        return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/logo-report.jpg" alt="Save Us" class="save-us-logo"></a>`;
+const logo = (variant = 'default', withSecond = false) => {
+    // Code HTML du premier logo
+    const primaryLogo = `
+        <a href="index.html" class="save-us-logo-link">
+            <img src="assets/img/save-us-logo.png" alt="Save Us" class="save-us-logo" onerror="this.onerror=null;this.src='assets/img/save-us-logo.svg'">
+        </a>
+    `;
+
+    // Code HTML du deuxième logo
+    const secondLogo = `
+        <a href="index.html" class="save-us-logo-link">
+            <img src="assets/img/logo-report.jpg" alt="Second Logo" class="save-us-logo" onerror="this.onerror=null;this.src='assets/img/logo-report.jpg'">
+        </a>
+    `;
+
+    // Si on demande à afficher les deux (pour le footer)
+    if (withSecond) {
+        return `
+            <div style="display: flex; align-items: center; gap: 10px;">
+                ${primaryLogo}
+                ${secondLogo}
+            </div>
+        `;
     }
-    return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/save-us-logo.png" alt="Save Us" class="save-us-logo" onerror="this.onerror=null;this.src='assets/img/save-us-logo.svg'"></a>`;
-    return `<a href="index.html" class="save-us-logo-link"><img src="assets/img/logo-report.jpg" alt="Save Us" class="save-us-logo" onerror="this.onerror=null;this.src='assets/img/logo-report.jpg'"></a>`;
+
+    // Sinon, on retourne uniquement le logo classique (pour le header)
+    return primaryLogo;
 };
 
 const head = (title) => `<!DOCTYPE html>
@@ -21,6 +41,9 @@ const head = (title) => `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title} - Save Us</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
     <link rel="stylesheet" href="assets/icon/flaticon_charitics.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
@@ -188,7 +211,7 @@ const footer = `
             <div class="ul-footer-container">
                 <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
                     <div class="ul-footer-about">
-                        ${logo('white')}
+                        ${logo('white', true)}
                         <p class="ul-footer-about-txt">Association humanitaire dédiée à l'éducation et à la formation des enfants et femmes victimes des conflits au Cameroun.</p>
                         <div class="ul-footer-socials">
                             <a href="https://www.instagram.com/save.uscm?psln=djBlYjVqZ3V1MHRp"><i class="flaticon-instagram"></i></a>
@@ -924,6 +947,8 @@ const pages = {
 await rm(DIST, { recursive: true, force: true });
 await mkdir(DIST, { recursive: true });
 await cp(join(ROOT, 'assets'), join(DIST, 'assets'), { recursive: true });
+await cp(join(ROOT, 'assets/img/favicon-32.png'), join(DIST, 'favicon.ico'));
+await cp(join(ROOT, 'assets/img/favicon-32.png'), join(DIST, 'favicon.png'));
 console.log('Copied: assets/ → dist/assets/\n');
 
 for (const [file, content] of Object.entries(pages)) {
