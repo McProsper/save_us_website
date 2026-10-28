@@ -721,7 +721,7 @@ const faireUnDonPage = pageShell('Faire un don', 'don', `
                                                         class="ul-donate-form-label"><input type="number"
                                                             name="custom-amount" placeholder="Autre montant"
                                                             class="ul-donate-form-custom-input"
-                                                            style="width:100px"></label></div>
+                                                            style="width:100px; color: #000000;"></label></div>
                                             </div>
                                         </div>
                                     </div>
