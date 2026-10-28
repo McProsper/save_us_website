@@ -109,7 +109,7 @@ const ctaBand = `
         <div class="ul-container">
             <div class="save-us-cta-band wow animate__fadeInUp">
                 <span class="save-us-cta-band__label">Agissez maintenant</span>
-                <h2>Ensemble, offrons un avenir aux enfants et aux femmes des zones de guerre</h2>
+                <h2>Ensemble, semons l’espoir et bâtissons un avenir meilleur pour les enfants et les femmes victimes des conflits</h2>
                 <p>Votre don ou votre engagement bénévole change concrètement des vies. Rejoignez les 10+ donateurs qui nous font confiance.</p>
                 <div class="save-us-cta-band__btns">
                     <a href="faire-un-don.html" class="ul-btn ul-btn--white"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Faire un don</a>
@@ -189,7 +189,7 @@ const footer = `
                 <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
                     <div class="ul-footer-about">
                         ${logo('white')}
-                        <p class="ul-footer-about-txt">Association humanitaire dédiée à l'éducation des femmes et enfants victimes des conflits armés au Cameroun.</p>
+                        <p class="ul-footer-about-txt">Association humanitaire dédiée à l'éducation et à la formation des enfants et femmes victimes des conflits au Cameroun.</p>
                         <div class="ul-footer-socials">
                             <a href="https://www.instagram.com/save.uscm?psln=djBlYjVqZ3V1MHRp"><i class="flaticon-instagram"></i></a>
                             <!-- <a href="#"><i class="flaticon-twitter"></i></a> -->
@@ -295,11 +295,6 @@ const indexContent = `
                                     <a href="devenir-benevole.html" class="ul-btn ul-btn--secondary"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Devenir bénévole</a>
                                 </div>
                                 <div class="save-us-hero-trust">
-                                    <div class="save-us-hero-trust__avatars">
-                                        <img src="assets/img/user-1.png" alt="">
-                                        <img src="assets/img/user-2.png" alt="">
-                                        <img src="assets/img/user-3.png" alt="">
-                                    </div>
                                     <div>
                                         <strong>10+ donateurs</strong>
                                         <span>nous font confiance</span>
@@ -311,7 +306,7 @@ const indexContent = `
                     <div class="col align-self-start">
                         <div class="ul-banner-img">
                             <div class="img-wrapper">
-                                <img src="assets/img/banner-img.png" alt="Enfants et femmes en zone de conflit">
+                                <img src="assets/img/femme-enfant.jpg" alt="Enfants et femmes en zone de conflit">
                             </div>
                             <div class="save-us-hero-float">
                                 <span class="save-us-hero-float__number">10+</span>
@@ -328,7 +323,7 @@ const indexContent = `
                 <div class="row row-cols-md-2 row-cols-1 align-items-center gy-4 ul-about-row">
                     <div class="col">
                         <div class="ul-about-imgs">
-                            <div class="img-wrapper"><img src="assets/img/about-img.png" alt="Notre mission"></div>
+                            <div class="img-wrapper"><img src="assets/img/about-img-section.png" alt="Notre mission"></div>
                             <div class="ul-about-imgs-vectors">
                                 <img src="assets/img/about-img-vector-1.svg" alt="" class="vector-1">
                                 <img src="assets/img/about-img-vector-2.svg" alt="" class="vector-2">
@@ -633,41 +628,28 @@ const aProposPage = pageShell('À Propos', 'apropos', `
                         <div class="ul-about-tab-img"><img src="assets/img/mission.jpg" alt="Notre Mission"></div>
                         <div class="ul-about-tab-txt">
                             <h3 class="ul-about-tab-title">Notre Mission</h3>
-                            <p class="ul-about-tab-descr">Sauver et protéger les enfants et les femmes victimes des conflits armés en leur offrant une formation et une réinsertion sécurisées, des soins médicaux et un accompagnement vers l'autonomie.</p>
-                            <ul class="ul-about-tab-list">
-                                <li>Extraire les populations civiles des zones de combat actives</li>
-                                <li>Assurer les besoins vitaux : abri, nourriture, eau, soins</li>
-                                <li>Protéger les droits fondamentaux des enfants et des femmes</li>
-                                <li>Travailler en transparence avec nos donateurs et partenaires</li>
-                            </ul>
+                            <p class="ul-about-tab-descr">Chez Save Us, nous croyons que chaque personne mérite de vivre dignement, d’apprendre, de se former et d’avoir la possibilité de construire un avenir meilleur.</p>
+                            <p class="ul-about-tab-descr">Notre mission est de soutenir les personnes les plus vulnérables, notamment les enfants, les femmes et les familles en difficulté, en répondant à leurs besoins essentiels et en favorisant leur accès à l’éducation, à la formation et à la réinsertion sociale et professionnelle.</p>
+                            <p class="ul-about-tab-descr">À travers nos actions, nous voulons redonner espoir, ouvrir des opportunités et accompagner chacun vers une vie plus autonome et épanouie. Parce que derrière chaque difficulté, il y a une personne, une histoire et un avenir qui mérite d’être accompagné.</p>
                         </div>
                     </div>
                     <div id="tab-vision" class="ul-tab ul-about-tab">
                         <div class="ul-about-tab-img"><img src="assets/img/why-join.jpg" alt="Notre Vision"></div>
                         <div class="ul-about-tab-txt">
                             <h3 class="ul-about-tab-title">Notre Vision</h3>
-                            <p class="ul-about-tab-descr">Un monde où aucun enfant ni aucune femme ne sera laissé sans protection face à la guerre. Nous aspirons à bâtir un réseau humanitaire mondial capable de réagir en moins de 24 heures à toute crise touchant les civils.</p>
-                            <ul class="ul-about-tab-list">
-                                <li>Construire un monde où chaque enfant, même dans les zones de conflit, peut apprendre et grandir en toute sécurité.</li>
-                                <li>Nous travaillons en partenariat avec les acteurs locaux et internationaux pour maximiser notre impact.</li>
-                                <li>Notre vision inclut la création d'écoles sûres, l'accès à une éducation de qualité, et le développement de compétences pour un avenir meilleur.</li>
-                                <li>Nous aspirons à un monde où l'éducation n'est plus un privilège mais un droit fondamental accessible à tous.</li>
-                                <li>À travers nos actions, nous voulons inspirer le changement et créer une vague positive qui touchera les générations futures.</li>
-                            </ul>
+                            <p class="ul-about-tab-descr">Nous rêvons d’un monde où chaque enfant peut apprendre, où chaque personne peut vivre dans la dignité et où chacun a la possibilité de trouver sa place dans la société, quelles que soient ses difficultés ou son histoire.</p>
+                            <p class="ul-about-tab-descr">Nous aspirons à une société plus juste, solidaire et inclusive, où l’éducation, la formation et la réinsertion ouvrent de nouvelles perspectives, où les personnes vulnérables ne sont pas oubliées et où la solidarité devient une force capable de transformer des vies.</p>
+                            <p class="ul-about-tab-descr">Nous voulons contribuer à bâtir un avenir où personne n’est laissé de côté et où chacun peut espérer, grandir et réussir.</p>
                         </div>
                     </div>
                     <div id="tab-objectif" class="ul-tab ul-about-tab">
                         <div class="ul-about-tab-img"><img src="assets/img/contact-img.jpg" alt="Nos Objectifs"></div>
                         <div class="ul-about-tab-txt">
                             <h3 class="ul-about-tab-title">Notre Objectif</h3>
-                            <p class="ul-about-tab-descr">D'ici 2027, Save Us vise à doubler sa capacité d'intervention pour porter assistance à 10 000 personnes par an, tout en renforçant nos programmes de réinsertion et d'éducation.</p>
-                            <ul class="ul-about-tab-list">
-                                <li>Garantir l'accès à l'éducation pour tous les enfants, sans distinction de race, de religion ou de situation géographique.</li>
-                                <li>Soutenir le développement personnel et l'épanouissement des enfants à travers des programmes éducatifs adaptés.</li>
-                                <li>Créer des programmes durables pour les communautés, en formant des enseignants locaux et en construisant des infrastructures éducatives résilientes.</li>
-                                <li>Fournir du matériel scolaire et des ressources pédagogiques aux écoles dans les zones de conflit.</li>
-                                <li>Sensibiliser la communauté internationale sur l'importance de l'éducation en situation de crise.</li>
-                            </ul>
+                            <p class="ul-about-tab-descr">Notre objectif est de faire de la solidarité une réalité concrète dans la vie de ceux qui en ont le plus besoin.</p>
+                            <p class="ul-about-tab-descr">À travers nos initiatives, nous souhaitons améliorer les conditions de vie des personnes vulnérables, favoriser l’accès à l’éducation et à la formation, soutenir la réinsertion sociale et professionnelle et offrir à chacun de meilleures chances de construire son avenir.</p>
+                            <p class="ul-about-tab-descr">Nous voulons également mobiliser les citoyens, les institutions et les partenaires autour d’une même conviction : ensemble, nous pouvons transformer les difficultés en opportunités et faire naître de nouvelles espérances.</p>
+                            <p class="ul-about-tab-descr">Parce qu’aider une personne, c’est aussi lui donner les moyens d’avancer par elle-même, nous œuvrons pour un changement qui ne s’arrête pas à aujourd’hui, mais qui prépare les lendemains.</p>
                             <p class="ul-about-tab-descr mt-3">Ces objectifs ne sont atteignables qu'avec votre soutien. <a href="faire-un-don.html" style="color:var(--ul-primary)">Faites un don</a> ou <a href="devenir-benevole.html" style="color:var(--ul-primary)">devenez bénévole</a>.</p>
                         </div>
                     </div>
