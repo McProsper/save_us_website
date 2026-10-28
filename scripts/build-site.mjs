@@ -586,7 +586,7 @@ const aProposPage = pageShell('À Propos', 'apropos', `
             <div class="row row-cols-md-2 row-cols-1 align-items-center gy-4 ul-about-row">
                 <div class="col">
                     <div class="ul-about-imgs">
-                        <div class="img-wrapper"><img src="assets/img/about-img.png" alt="Save Us"></div>
+                        <div class="img-wrapper"><img src="assets/img/about-img-section.png" alt="Save Us"></div>
                     </div>
                 </div>
                 <div class="col">
