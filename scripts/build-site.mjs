@@ -133,7 +133,7 @@ const ctaBand = `
             <div class="save-us-cta-band wow animate__fadeInUp">
                 <span class="save-us-cta-band__label">Agissez maintenant</span>
                 <h2>Ensemble, semons l’espoir et bâtissons un avenir meilleur pour les enfants et les femmes victimes des conflits</h2>
-                <p>Votre don ou votre engagement bénévole change concrètement des vies. Rejoignez les 10+ donateurs qui nous font confiance.</p>
+                <p>Votre don ou votre engagement bénévole change concrètement des vies. Rejoignez les +10 donateurs qui nous font confiance.</p>
                 <div class="save-us-cta-band__btns">
                     <a href="faire-un-don.html" class="ul-btn ul-btn--white"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Faire un don</a>
                     <a href="devenir-benevole.html" class="ul-btn ul-btn--outline-white"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Devenir bénévole</a>
@@ -318,7 +318,7 @@ const indexContent = `
                                 </div>
                                 <div class="save-us-hero-trust">
                                     <div>
-                                        <strong>10+ donateurs</strong>
+                                        <strong>+10 donateurs</strong>
                                         <span>nous font confiance</span>
                                     </div>
                                 </div>
@@ -331,8 +331,8 @@ const indexContent = `
                                 <img src="assets/img/femme-enfant.jpg" alt="Enfants et femmes en zone de conflit">
                             </div>
                             <div class="save-us-hero-float">
-                                <span class="save-us-hero-float__number">10+</span>
-                                <span class="save-us-hero-float__label">Vies sauvées depuis 2020</span>
+                                <span class="save-us-hero-float__number">+50</span>
+                                <span class="save-us-hero-float__label">Personnes aidées depuis 2025</span>
                             </div>
                         </div>
                     </div>
@@ -398,10 +398,10 @@ const indexContent = `
             <div class="ul-container">
                 <div class="ul-stats-wrapper wow animate__fadeInUp">
                     <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2 row-cols-xxs-1 ul-bs-row justify-content-center">
-                        <div class="col"><div class="ul-stats-item"><i class="flaticon-costumer"></i><span class="number">200+</span><span class="txt">Vies impactées</span></div></div>
-                        <div class="col"><div class="ul-stats-item"><i class="flaticon-team"></i><span class="number">10+</span><span class="txt">Bénévoles actifs</span></div></div>
+                        <div class="col"><div class="ul-stats-item"><i class="flaticon-costumer"></i><span class="number">+200</span><span class="txt">Vies impactées</span></div></div>
+                        <div class="col"><div class="ul-stats-item"><i class="flaticon-team"></i><span class="number">+10</span><span class="txt">Bénévoles actifs</span></div></div>
                         <div class="col"><div class="ul-stats-item"><i class="flaticon-package"></i><span class="number">1</span><span class="txt">Pays d'intervention</span></div></div>
-                        <div class="col"><div class="ul-stats-item"><i class="flaticon-relationship"></i><span class="number">10+</span><span class="txt">Donateurs</span></div></div>
+                        <div class="col"><div class="ul-stats-item"><i class="flaticon-relationship"></i><span class="number">+10</span><span class="txt">Donateurs</span></div></div>
                     </div>
                 </div>
             </div>
