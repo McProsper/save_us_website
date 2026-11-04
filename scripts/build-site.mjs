@@ -41,9 +41,9 @@ const head = (title) => `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title} - Save Us</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
     <link rel="stylesheet" href="assets/icon/flaticon_charitics.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
@@ -640,7 +640,7 @@ const aProposPage = pageShell('À Propos', 'apropos', `
             <div class="ul-section-heading align-items-center wow animate__fadeInUp">
                 <div class="left">
                     <span class="ul-section-sub-title">Notre organisation</span>
-                    <h2 class="ul-section-title text-white">Mission, Vision & Objectifs</h2>
+                    <h2 class="ul-section-title-about">Mission, Vision & Objectifs</h2>
                 </div>
                 <a href="faire-un-don.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Nous soutenir</a>
             </div>

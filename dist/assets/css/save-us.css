@@ -202,6 +202,13 @@ body {
   line-height: 1.2 !important;
 }
 
+.ul-section-title-about {
+  font-family: var(--font-primary) !important;
+  font-weight: 800 !important;
+  color: white !important;
+  line-height: 1.2 !important;
+}
+
 /* ---- Hero / Banner ---- */
 .ul-banner {
   background: var(--su-gradient-soft);
